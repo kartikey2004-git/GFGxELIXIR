@@ -121,16 +121,17 @@ const Cards = () => {
           </p>
         </div>
 
-        {/* Cards */}
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 max-w-full px-4 lg:px-8 mx-auto">
+        {/* Cards - Horizontal Layout */}
+        <div className="flex flex-col lg:flex-row gap-4 lg:gap-3 xl:gap-6 max-w-full px-4 mx-auto">
           {cardData.map((item, i) => (
             <div
               key={i}
               ref={(el) => (cardsRef.current[i] = el)}
               className={`
-                group relative flex-1 cursor-pointer
+                group relative cursor-pointer
                 transition-all duration-700 ease-out
-                ${activeCard === i ? "lg:flex-[2]" : "lg:flex-1"}
+                flex-1
+                ${activeCard === i ? "lg:flex-[1.5]" : "lg:flex-1"}
               `}
               onMouseEnter={() => setActiveCard(i)}
               onMouseLeave={() => setActiveCard(null)}
@@ -159,10 +160,10 @@ const Cards = () => {
                 </div>
 
                 {/* Content */}
-                <div className="relative z-10 p-8 lg:p-10 text-center lg:text-left flex flex-col items-center lg:items-start">
+                <div className="relative z-10 p-6 lg:p-8 text-center lg:text-left flex flex-col items-center lg:items-start">
                   {/* Icon */}
                   <div className="mb-6">
-                    <div className="w-14 h-14 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center group-hover:bg-white/15 group-hover:border-white/20 group-hover:scale-110 transition-all duration-500">
+                    <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center group-hover:bg-white/15 group-hover:border-white/20 group-hover:scale-110 transition-all duration-500">
                       {cloneElement(item.icon, {
                         className: "w-6 h-6 text-white/70 group-hover:text-white transition-colors duration-300",
                       })}
@@ -175,7 +176,7 @@ const Cards = () => {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-3xl lg:text-4xl font-bold text-white tracking-tight mb-3 group-hover:translate-x-2 transition-transform duration-500">
+                  <h3 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-white tracking-tight mb-3 group-hover:translate-x-2 transition-transform duration-500">
                     {item.title}
                   </h3>
 

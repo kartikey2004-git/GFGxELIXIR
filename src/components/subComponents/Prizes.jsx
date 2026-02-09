@@ -4,7 +4,6 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 
 const InteractiveCard = ({ children, className = "", spotlightColor = "rgba(255, 255, 255, 0.1)" }) => {
   const ref = useRef(null);
-
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
@@ -107,7 +106,8 @@ const Prizes = () => {
       spotlight: "rgba(253, 224, 71, 0.2)", 
       border: "hover:border-yellow-500/40", 
       perks: ["Mentorship", "Internship", "Certificate"],
-      id: 1 
+      id: 1,
+      order: "lg:order-2" 
     },
     {
       place: "2nd Place",
@@ -117,7 +117,8 @@ const Prizes = () => {
       spotlight: "rgba(226, 232, 240, 0.2)", 
       border: "hover:border-slate-400/40", 
       perks: ["Mentorship", "Interview Prep", "Certificate"],
-      id: 2 
+      id: 2,
+      order: "lg:order-1" 
     },
     {
       place: "3rd Place",
@@ -127,11 +128,10 @@ const Prizes = () => {
       spotlight: "rgba(253, 186, 116, 0.2)", 
       border: "hover:border-orange-500/40", 
       perks: ["Mentorship", "Swag", "Certificate"],
-      id: 3 
+      id: 3,
+      order: "lg:order-3" 
     },
   ];
-
-  const podiumOrder = [winners[1], winners[0], winners[2]];
 
   return (
     <section className="relative min-h-screen py-24 bg-[#050505] text-white overflow-hidden flex flex-col justify-center perspective-1000">
@@ -168,9 +168,9 @@ const Prizes = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-16 items-end">
-          {podiumOrder.map((p, i) => (
+          {winners.map((p, i) => (
             <motion.div 
-              key={i} 
+              key={p.id} 
               initial={{ y: 100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
@@ -180,10 +180,9 @@ const Prizes = () => {
                 stiffness: 100, 
                 damping: 20 
               }}
-              className={`
-                w-full transform transition-all duration-500
-                ${p.id === 1 ? 'lg:h-[500px] z-10' : 'lg:h-[440px] z-0'} 
-              `}
+              className={`w-full transform transition-all duration-500 ${p.order} ${
+                p.id === 1 ? 'lg:h-[500px] z-10' : 'lg:h-[440px] z-0'
+              }`}
             >
               <InteractiveCard 
                 spotlightColor={p.spotlight}
@@ -219,17 +218,18 @@ const Prizes = () => {
              whileInView={{ opacity: 1, y: 0 }}
              transition={{ delay: 0.6 }}
           >
+            {/* Modified className to stack on mobile (flex-col) and row on laptop (md:flex-row) */}
             <InteractiveCard 
-              className="group border border-white/10 bg-black/60 backdrop-blur-xl hover:border-blue-500/30 !flex-row !items-center !justify-start !p-8 !pt-8"
+              className="group border border-white/10 bg-black/60 backdrop-blur-xl hover:border-blue-500/30 !flex-col md:!flex-row !items-center !justify-center md:!justify-start p-6 md:p-8"
               spotlightColor="rgba(59, 130, 246, 0.2)"
             >
-              <div className="flex items-center gap-6 w-full">
+              <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 w-full">
                 
                 <div className="p-3 rounded-xl bg-transparent border border-transparent group-hover:bg-blue-500/20 group-hover:border-blue-500/20 transition-all duration-300 shrink-0">
                   <Rocket className="text-white group-hover:text-blue-300 transition-colors" size={32} />
                 </div>
 
-                <div className="flex flex-col text-left">
+                <div className="flex flex-col text-center md:text-left">
                   <h3 className="text-2xl font-bold text-white leading-tight">Track Winners</h3>
                   <p className="text-gray-400 text-sm">Best project in each sector</p>
                   
@@ -250,17 +250,18 @@ const Prizes = () => {
              whileInView={{ opacity: 1, y: 0 }}
              transition={{ delay: 0.7 }}
           >
+            {/* Modified className to stack on mobile (flex-col) and row on laptop (md:flex-row) */}
             <InteractiveCard 
-              className="group border border-white/10 bg-black/60 backdrop-blur-xl hover:border-purple-500/30 !flex-row !items-center !justify-start !p-8 !pt-8"
+              className="group border border-white/10 bg-black/60 backdrop-blur-xl hover:border-purple-500/30 !flex-col md:!flex-row !items-center !justify-center md:!justify-start p-6 md:p-8"
               spotlightColor="rgba(168, 85, 247, 0.2)"
             >
-              <div className="flex items-center gap-6 w-full">
+              <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 w-full">
                 
                 <div className="p-3 rounded-xl bg-transparent border border-transparent group-hover:bg-purple-500/20 group-hover:border-purple-500/20 transition-all duration-300 shrink-0">
                   <Zap className="text-white group-hover:text-purple-300 transition-colors" size={32} />
                 </div>
 
-                <div className="flex flex-col text-left">
+                <div className="flex flex-col text-center md:text-left">
                   <h3 className="text-2xl font-bold text-white leading-tight">Special Awards</h3>
                   <p className="text-gray-400 text-sm">Design, Innovation, & UI</p>
                   
@@ -282,7 +283,7 @@ const Prizes = () => {
           perspective: 1000px;
         }
       `}</style>
-    </section>
+    </section> 
   );
 };
 

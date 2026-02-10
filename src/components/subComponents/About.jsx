@@ -36,17 +36,17 @@ const About = () => {
 
       <div
         ref={contentRef}
-        className="relative z-10 max-w-xl p-6 md:p-10  shadow-2xl rounded-2xl"
+        className="relative z-10 max-w-xl p-4 sm:p-6 md:p-10 shadow-2xl rounded-2xl mx-2"
       >
-        <CardHeader>
-          <CardTitle className="text-4xl md:text-5xl mb-4 font-light tracking-wider">
+        <CardHeader className="px-2 sm:px-6">
+          <CardTitle className="text-2xl sm:text-4xl md:text-5xl mb-4 font-light tracking-wider">
             Mission Briefing
           </CardTitle>
           <Separator className="bg-white/20 mb-4" />
         </CardHeader>
 
-        <CardContent className="space-y-6 text-gray-300">
-          <p className="text-base md:text-lg leading-relaxed">
+        <CardContent className="space-y-4 sm:space-y-6 text-gray-300 px-2 sm:px-6">
+          <p className="text-sm sm:text-base md:text-lg leading-relaxed">
             <span className="text-white font-semibold">
               CLASSIFIED: SCOUT REGIMENT HEADQUARTERS
             </span>
@@ -60,27 +60,27 @@ const About = () => {
             72-hour operation to push past the limits of innovation.
           </p>
 
-          <p className="text-base md:text-lg leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg leading-relaxed">
             This is{" "}
             <span className="text-white font-semibold">
-              humanity’s last stand
+              humanity's last stand
             </span>{" "}
             against the titans of outdated code and creative stagnation.
             Developers unite, adapt, and rise beyond all boundaries.
           </p>
 
-          <div className="grid grid-cols-2 gap-4 text-left">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 text-left">
             {aboutData.map((item, idx) => (
               <div
                 key={idx}
-                className="flex items-start gap-3 bg-white/5 p-3 rounded-md border border-white/10 hover:bg-white/10 transition-all duration-300"
+                className="flex items-start gap-2 sm:gap-3 bg-white/5 p-2.5 sm:p-3 rounded-md border border-white/10 hover:bg-white/10 transition-all duration-300"
               >
-                {item.icon}
+                <div className="shrink-0">{item.icon}</div>
                 <div>
-                  <h3 className="font-semibold text-white text-lg">
+                  <h3 className="font-semibold text-white text-sm sm:text-lg">
                     {item.title}
                   </h3>
-                  <p className="text-gray-400 text-sm">{item.text}</p>
+                  <p className="text-gray-400 text-xs sm:text-sm">{item.text}</p>
                 </div>
               </div>
             ))}

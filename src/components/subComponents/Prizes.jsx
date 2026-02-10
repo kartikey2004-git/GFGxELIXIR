@@ -39,15 +39,15 @@ const Prizes = () => {
 
         <div className="relative z-10 container mx-auto px-3 sm:px-4">
         <div className="text-center mb-10 sm:mb-16">
-          <h2 className="text-3xl sm:text-5xl font-light tracking-tight mb-4">
+          <h2 className="text-2xl sm:text-5xl font-light tracking-tight mb-3 sm:mb-4">
             Prize Pool
           </h2>
-          <p className="text-base sm:text-lg text-gray-400">
+          <p className="text-sm sm:text-lg text-gray-400 px-2">
             The spoils of victory await the bravest coders
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8 max-w-6xl mx-auto mb-8 sm:mb-12">
           {[
             {
               emoji: "🥇",
@@ -77,22 +77,22 @@ const Prizes = () => {
                 w-full
               "
             >
-              <CardHeader className="text-center py-6 sm:py-8">
-                <div className="text-4xl sm:text-5xl md:text-6xl mb-3">{p.emoji}</div>
+              <CardHeader className="text-center py-5 sm:py-8">
+                <div className="text-3xl sm:text-5xl md:text-6xl mb-2 sm:mb-3">{p.emoji}</div>
 
-                <CardTitle className="text-xl sm:text-2xl md:text-3xl text-white mb-1 sm:mb-2">
+                <CardTitle className="text-lg sm:text-2xl md:text-3xl text-white mb-1 sm:mb-2">
                   {p.place}
                 </CardTitle>
 
-                <div className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white mt-1 sm:mt-2">
+                <div className="text-xl sm:text-3xl md:text-4xl font-semibold text-white mt-1 sm:mt-2">
                   {p.amount}
                 </div>
               </CardHeader>
 
-              <CardContent className="text-center space-y-2">
-                <Separator className="bg-white/10 mb-3" />
+              <CardContent className="text-center space-y-1.5 sm:space-y-2 pb-5 sm:pb-6">
+                <Separator className="bg-white/10 mb-2 sm:mb-3" />
                 {p.perks.map((perk, j) => (
-                  <p key={j} className="text-gray-400 text-xs sm:text-sm md:text-base">
+                  <p key={j} className="text-gray-400 text-[11px] sm:text-sm md:text-base px-2">
                     {perk}
                   </p>
                 ))}
@@ -101,7 +101,7 @@ const Prizes = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto">
           <Card
             ref={(el) => (cardsRef.current[3] = el)}
             className="
@@ -110,18 +110,18 @@ const Prizes = () => {
               transition-all duration-500 w-full
             "
           >
-            <CardHeader className="flex flex-col items-center py-6">
-              <Award className="w-8 h-8 sm:w-10 sm:h-10 text-yellow-400 mb-2" />
-              <CardTitle className="text-white text-lg sm:text-xl">
+            <CardHeader className="flex flex-col items-center py-5 sm:py-6">
+              <Award className="w-7 h-7 sm:w-10 sm:h-10 text-yellow-400 mb-2" />
+              <CardTitle className="text-white text-base sm:text-xl">
                 Track Winners
               </CardTitle>
             </CardHeader>
 
-            <CardContent className="text-center">
-              <p className="text-xl sm:text-2xl font-semibold text-white">
+            <CardContent className="text-center pb-5 sm:pb-6">
+              <p className="text-lg sm:text-2xl font-semibold text-white">
                 ₹10,000 × 5
               </p>
-              <p className="text-gray-400 mt-1 text-xs sm:text-sm">
+              <p className="text-gray-400 mt-1 text-[11px] sm:text-sm px-2">
                 Top project in each track
               </p>
             </CardContent>
@@ -135,18 +135,18 @@ const Prizes = () => {
               transition-all duration-500 w-full
             "
           >
-            <CardHeader className="flex flex-col items-center py-6">
-              <Sparkles className="w-8 h-8 sm:w-10 sm:h-10 text-blue-400 mb-2" />
-              <CardTitle className="text-white text-lg sm:text-xl">
+            <CardHeader className="flex flex-col items-center py-5 sm:py-6">
+              <Sparkles className="w-7 h-7 sm:w-10 sm:h-10 text-blue-400 mb-2" />
+              <CardTitle className="text-white text-base sm:text-xl">
                 Special Awards
               </CardTitle>
             </CardHeader>
 
-            <CardContent className="text-center">
-              <p className="text-xl sm:text-2xl font-semibold text-white">
+            <CardContent className="text-center pb-5 sm:pb-6">
+              <p className="text-lg sm:text-2xl font-semibold text-white">
                 ₹5,000 × 10
               </p>
-              <p className="text-gray-400 mt-1 text-xs sm:text-sm">
+              <p className="text-gray-400 mt-1 text-[11px] sm:text-sm px-2">
                 Most innovative, best design, etc.
               </p>
             </CardContent>

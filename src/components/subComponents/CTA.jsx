@@ -64,38 +64,38 @@ const CTA = () => {
 
       <div
         ref={contentRef}
-        className="relative z-10 text-center max-w-3xl mx-auto px-4 sm:px-6"
+        className="relative z-10 text-center max-w-3xl mx-auto px-3 sm:px-6"
       >
-        <div className="mb-6 flex justify-center">
-          <Sparkles className="w-10 h-10 text-white animate-pulse" />
+        <div className="mb-4 sm:mb-6 flex justify-center">
+          <Sparkles className="w-8 h-8 sm:w-10 sm:h-10 text-white animate-pulse" />
         </div>
 
-        <h2 className="text-5xl md:text-7xl font-light tracking-tight mb-4 leading-tight">
+        <h2 className="text-3xl sm:text-5xl md:text-7xl font-light tracking-tight mb-3 sm:mb-4 leading-tight px-2">
           Ready to Face the Titans?
         </h2>
-        <p className="text-lg md:text-xl text-gray-300 mb-10">
+        <p className="text-sm sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-10 px-2">
           Join the <span className="text-white font-semibold">Survey Corps</span>.  
           Unite with elite developers in humanity’s last stand  
           against the titans of outdated code.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-6 justify-center">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center max-w-md sm:max-w-none mx-auto">
           <Button
             size="lg"
-            className="bg-white text-black hover:bg-gray-200 px-10 py-7 text-lg font-semibold transform hover:scale-105 transition-all duration-300"
+            className="bg-white text-black hover:bg-gray-200 px-6 sm:px-10 py-4 sm:py-7 text-sm sm:text-lg font-semibold transform hover:scale-105 transition-all duration-300 w-full sm:w-auto"
           >
             Enlist Now
           </Button>
           <Button
             size="lg"
             variant="outline"
-            className="border-2 border-white text-white hover:bg-white hover:text-black px-10 py-7 text-lg font-semibold transform hover:scale-105 transition-all duration-300"
+            className="border-2 border-white text-white hover:bg-white hover:text-black px-6 sm:px-10 py-4 sm:py-7 text-sm sm:text-lg font-semibold transform hover:scale-105 transition-all duration-300 w-full sm:w-auto"
           >
             Join Discord
           </Button>
         </div>
 
-        <p className="mt-8 text-sm text-gray-500 tracking-wide">
+        <p className="mt-6 sm:mt-8 text-xs sm:text-sm text-gray-500 tracking-wide px-2">
           Registration closes <span className="text-white">February 1, 2025</span>
         </p>
       </div>

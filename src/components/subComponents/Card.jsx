@@ -27,15 +27,15 @@ const Cards = () => {
 
       <div className="relative z-20 container mx-auto px-3 sm:px-4 py-10 sm:py-16">
         <div className="text-center mb-8 sm:mb-10">
-          <p className="text-xs sm:text-sm text-gray-400 uppercase tracking-widest mb-1">
+          <p className="text-[10px] sm:text-sm text-gray-400 uppercase tracking-widest mb-1">
             STRATEGIC OPERATIONS CLASSIFICATION
           </p>
 
-          <h2 className="text-3xl sm:text-4xl md:text-6xl font-light tracking-tight mb-3">
+          <h2 className="text-2xl sm:text-4xl md:text-6xl font-light tracking-tight mb-3">
             Battle Fronts
           </h2>
 
-          <p className="text-base sm:text-lg md:text-xl text-gray-300">
+          <p className="text-sm sm:text-lg md:text-xl text-gray-300 px-2">
             Select your division and deploy your expertise
           </p>
         </div>
@@ -54,32 +54,33 @@ const Cards = () => {
               "
             >
               <CardHeader className="relative pt-4 pb-2 px-3 sm:px-4">
-                <CardTitle className="text-lg sm:text-xl md:text-2xl font-semibold text-white pr-12 sm:pr-14">
+                <CardTitle className="text-base sm:text-xl md:text-2xl font-semibold text-white pr-12 sm:pr-14">
                   {item.title}
                 </CardTitle>
 
-                <CardDescription className="text-gray-400 text-[11px] sm:text-xs md:text-sm uppercase tracking-wider mt-2">
+                <CardDescription className="text-gray-400 text-[10px] sm:text-xs md:text-sm uppercase tracking-wider mt-2">
                   {item.desc}
                 </CardDescription>
 
                 <div
                   className="
                     absolute top-3 right-3 
-                    p-2 bg-white/10 rounded-lg 
+                    p-1.5 sm:p-2 bg-white/10 rounded-lg 
                     border border-white/10 
                   "
                 >
                   {cloneElement(item.icon, {
-                    className: "w-6 h-6 md:w-8 md:h-8 text-white",
+                    className: "w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 text-white",
                   })}
                 </div>
               </CardHeader>
 
               <CardContent className="px-3 sm:px-4 pb-5 sm:pb-6">
-                <ul className="space-y-2 sm:space-y-3 text-gray-300 text-xs sm:text-sm">
+                <ul className="space-y-2 sm:space-y-3 text-gray-300 text-[11px] sm:text-sm">
                   {item.points.map((p, idx) => (
-                    <li key={idx} className="flex items-center gap-2">
-                      <span className="text-white">▸</span> {p}
+                    <li key={idx} className="flex items-start gap-1.5 sm:gap-2 leading-tight sm:leading-normal">
+                      <span className="text-white shrink-0">▸</span> 
+                      <span>{p}</span>
                     </li>
                   ))}
                 </ul>

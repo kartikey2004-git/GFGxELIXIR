@@ -48,17 +48,17 @@ const FAQ = () => {
       </div>
 
       <div className="relative z-10 container mx-auto px-3 sm:px-4 max-w-3xl">
-        <div className="text-center mb-10 sm:mb-16">
-          <h2 className="text-3xl sm:text-5xl font-light tracking-tight mb-3">
+        <div className="text-center mb-8 sm:mb-16">
+          <h2 className="text-2xl sm:text-5xl font-light tracking-tight mb-2 sm:mb-3">
             Frequently Asked Questions
           </h2>
-          <p className="text-base sm:text-lg text-gray-400">Everything you need to know</p>
+          <p className="text-sm sm:text-lg text-gray-400 px-2">Everything you need to know</p>
         </div>
 
         <Accordion
           type="single"
           collapsible
-          className="w-full space-y-4"
+          className="w-full space-y-3 sm:space-y-4"
         >
           {faqs.map((faq, i) => (
             <AccordionItem
@@ -67,10 +67,10 @@ const FAQ = () => {
               value={`item-${i}`}
               className="bg-white/5 backdrop-blur-md border border-white/10 rounded-lg hover:bg-white/10 transition-all duration-300"
             >
-              <AccordionTrigger className="text-left font-normal text-white px-3 sm:px-6 py-3 sm:py-4 hover:text-gray-300 text-base sm:text-lg">
+              <AccordionTrigger className="text-left font-normal text-white px-3 sm:px-6 py-3 sm:py-4 hover:text-gray-300 text-sm sm:text-lg">
                 {faq.q}
               </AccordionTrigger>
-              <AccordionContent className="text-gray-400 px-3 sm:px-6 pb-3 sm:pb-4 text-xs sm:text-sm leading-relaxed">
+              <AccordionContent className="text-gray-400 px-3 sm:px-6 pb-3 sm:pb-4 text-[11px] sm:text-sm leading-relaxed">
                 {faq.a}
               </AccordionContent>
             </AccordionItem>

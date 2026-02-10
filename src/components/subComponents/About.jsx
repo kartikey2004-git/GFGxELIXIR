@@ -38,8 +38,13 @@ const About = () => {
         ref={contentRef}
         className="relative z-10 max-w-xl p-4 sm:p-6 md:p-10 shadow-2xl rounded-2xl mx-2"
       >
+<<<<<<< refs/remotes/origin/responsive
         <CardHeader className="px-2 sm:px-6">
           <CardTitle className="text-2xl sm:text-4xl md:text-5xl mb-4 font-light tracking-wider">
+=======
+        <CardHeader>
+          <CardTitle className="text-3xl sm:text-4xl md:text-5xl mb-4 font-light tracking-wider">
+>>>>>>> local
             Mission Briefing
           </CardTitle>
           <Separator className="bg-white/20 mb-4" />
@@ -69,8 +74,12 @@ const About = () => {
             Developers unite, adapt, and rise beyond all boundaries.
           </p>
 
+<<<<<<< refs/remotes/origin/responsive
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 text-left">
+=======
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
+>>>>>>> local
             {aboutData.map((item, idx) => (
               <div
                 key={idx}

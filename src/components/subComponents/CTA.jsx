@@ -70,7 +70,11 @@ const CTA = () => {
           <Sparkles className="w-8 h-8 sm:w-10 sm:h-10 text-white animate-pulse" />
         </div>
 
+<<<<<<< refs/remotes/origin/responsive
         <h2 className="text-3xl sm:text-5xl md:text-7xl font-light tracking-tight mb-3 sm:mb-4 leading-tight px-2">
+=======
+        <h2 className="text-3xl sm:text-5xl md:text-7xl font-light tracking-tight mb-4 leading-tight">
+>>>>>>> local
           Ready to Face the Titans?
         </h2>
         <p className="text-sm sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-10 px-2">

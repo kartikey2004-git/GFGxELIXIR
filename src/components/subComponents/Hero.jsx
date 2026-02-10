@@ -38,7 +38,11 @@ const Hero = () => {
         ref={contentRef}
         className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-3 space-y-3 sm:space-y-5"
       >
+<<<<<<< refs/remotes/origin/responsive
         <Badge className="px-2.5 py-1.5 text-[9px] sm:text-sm bg-white/10 backdrop-blur-sm border-white/20 text-white shadow-lg max-w-[95vw] text-center leading-snug">
+=======
+        <Badge className="px-3 py-1.5 text-xs sm:text-sm bg-white/10 backdrop-blur-sm border-white/20 text-white shadow-lg max-w-[90vw] text-center leading-snug">
+>>>>>>> local
           COMMAND BRANCH: GEEKSFORGEEKS X ELIXIR
         </Badge>
 

@@ -160,7 +160,11 @@ const Cards = () => {
                   {item.title}
                 </CardTitle>
 
+<<<<<<< refs/remotes/origin/responsive
                 <CardDescription className="text-gray-400 text-[10px] sm:text-xs md:text-sm uppercase tracking-wider mt-2">
+=======
+                <CardDescription className="text-gray-400 text-xs md:text-sm uppercase tracking-wider mt-2">
+>>>>>>> local
                   {item.desc}
                 </CardDescription>
 

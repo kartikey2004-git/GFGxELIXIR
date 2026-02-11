@@ -1,6 +1,12 @@
-"use client";
+ "use client";
 import { useScroll, useTransform, motion, useSpring } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
+import { DM_Sans } from "next/font/google";
+
+const bodyFont = DM_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+});
 
 export const Timeline = ({ data }) => {
   const ref = useRef(null);

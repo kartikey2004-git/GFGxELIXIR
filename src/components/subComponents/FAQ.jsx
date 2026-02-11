@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Bebas_Neue, DM_Sans } from "next/font/google";
 import {
   Accordion,
   AccordionContent,
@@ -11,6 +12,16 @@ import {
   animateCardsStagger,
   cleanupScrollTriggers,
 } from "@/lib/gsap-utils";
+
+const sectionHeadingFont = Bebas_Neue({
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const bodyFont = DM_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+});
 
 const FAQ = () => {
   const sectionRef = useRef(null);
@@ -47,12 +58,18 @@ const FAQ = () => {
         <div className="absolute inset-0 bg-linear-to-b from-black/90 via-black/80 to-black/90" />
       </div>
 
-      <div className="relative z-10 container mx-auto px-3 sm:px-4 max-w-3xl">
-        <div className="text-center mb-10 sm:mb-16">
-          <h2 className="text-2xl sm:text-5xl font-light tracking-tight mb-3 text-center">
-            Frequently Asked Questions
+      <div className="relative z-10 container mx-auto px-4 max-w-3xl">
+        <div className="text-center mb-16">
+          <h2
+            className={`${sectionHeadingFont.className} text-5xl tracking-[0.08em] uppercase mb-3`}
+          >
+            <span className="bg-gradient-to-r from-[#F8D47A] via-[#E0A743] to-[#C67824] bg-clip-text text-transparent">
+              Frequently Asked Questions
+            </span>
           </h2>
-          <p className="text-base sm:text-lg text-gray-400">Everything you need to know</p>
+          <p className={`${bodyFont.className} text-lg text-gray-400`}>
+            Everything you need to know
+          </p>
         </div>
 
         <Accordion
@@ -67,10 +84,14 @@ const FAQ = () => {
               value={`item-${i}`}
               className="bg-white/5 backdrop-blur-md border border-white/10 rounded-lg hover:bg-white/10 transition-all duration-300"
             >
-              <AccordionTrigger className="text-left font-normal text-white px-3 sm:px-6 py-3 sm:py-4 hover:text-gray-300 text-sm sm:text-lg">
+              <AccordionTrigger
+                className={`${bodyFont.className} text-left font-normal text-white px-6 py-4 hover:text-gray-300 text-lg`}
+              >
                 {faq.q}
               </AccordionTrigger>
-              <AccordionContent className="text-gray-400 px-3 sm:px-6 pb-3 sm:pb-4 text-xs sm:text-sm leading-relaxed">
+              <AccordionContent
+                className={`${bodyFont.className} text-gray-400 px-6 pb-4 text-sm leading-relaxed`}
+              >
                 {faq.a}
               </AccordionContent>
             </AccordionItem>

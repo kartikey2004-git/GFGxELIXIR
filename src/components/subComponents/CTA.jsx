@@ -1,8 +1,14 @@
 import { useEffect, useRef } from "react";
+import { Bebas_Neue } from "next/font/google";
 import gsap from "gsap";
 import { Button } from "../ui/button";
 import { Sparkles } from "lucide-react";
 import { cleanupScrollTriggers } from "@/lib/gsap-utils";
+
+const sectionHeadingFont = Bebas_Neue({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const CTA = () => {
   const sectionRef = useRef(null);
@@ -70,7 +76,9 @@ const CTA = () => {
           <Sparkles className="w-10 h-10 text-white animate-pulse" />
         </div>
 
-        <h2 className="text-3xl sm:text-7xl font-light tracking-tight mb-4 leading-tight">
+        <h2
+          className={`${sectionHeadingFont.className} text-5xl md:text-7xl tracking-[0.08em] uppercase mb-4 leading-tight`}
+        >
           Ready to Face the Titans?
         </h2>
         <p className="text-base sm:text-xl text-gray-300 mb-8 px-2">

@@ -2,10 +2,16 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { DM_Sans } from "next/font/google";
 import { Timeline } from "@/components/ui/timeline";
 import { timelineData } from "@/lib/data/data";
 
 gsap.registerPlugin(ScrollTrigger);
+
+const bodyFont = DM_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+});
 
 const MissionTimeline = () => {
   const sectionRef = useRef(null);

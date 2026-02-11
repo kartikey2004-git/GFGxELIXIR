@@ -1,11 +1,17 @@
 "use client";
 
 import { cloneElement, useEffect, useRef, useState } from "react";
+import { DM_Sans } from "next/font/google";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Brain, Link, DollarSign, Lightbulb } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
+
+const bodyFont = DM_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+});
 
 const cardData = [
   {
@@ -31,7 +37,7 @@ const cardData = [
   },
   {
     icon: <Lightbulb />,
-    title: "Innovation",
+    title: "Open Innovation",
     desc: "Creative Nebula",
     number: "04",
     tagline: "Innovate without boundaries",
@@ -125,16 +131,20 @@ const Cards = () => {
       <div className="relative z-20 container mx-auto px-4 py-28">
         {/* Section Header */}
         <div ref={titleRef} className="text-center mb-24">
-          <p className="text-xs text-white/50 uppercase tracking-[0.5em] font-light mb-6">
+          <p
+            className={`${bodyFont.className} text-xs text-white/50 uppercase tracking-[0.5em] font-light mb-6`}
+          >
             [ Mission Sectors ]
           </p>
 
           <h2 className="text-5xl md:text-7xl lg:text-8xl font-thin tracking-tight mb-6">
             Cosmic{" "}
-            <span className="font-semibold italic">Horizons</span>
+            <span className="font-semibold italic bg-gradient-to-r from-[#F8D47A] via-[#E0A743] to-[#C67824] bg-clip-text text-transparent">
+              Horizons
+            </span>
           </h2>
 
-          <p className="text-lg text-white/40 max-w-md mx-auto font-light">
+          <p className={`${bodyFont.className} text-lg text-white/40 max-w-md mx-auto font-medium`}>
             Choose your constellation and embark on an interstellar journey
           </p>
         </div>

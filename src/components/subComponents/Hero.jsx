@@ -1,9 +1,15 @@
 import { useEffect, useRef } from "react";
+import { Audiowide } from "next/font/google";
 import { Button } from "../ui/button";
 import { Badge } from "../ui/badge";
 import { Code, Target } from "lucide-react";
 import { animatePinnedSection, cleanupScrollTriggers } from "@/lib/gsap-utils";
 import CountdownTimer from "./CountdownTimer";
+
+const audiowide = Audiowide({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const Hero = () => {
   const sectionRef = useRef(null);
@@ -43,11 +49,15 @@ const Hero = () => {
           COMMAND BRANCH: GEEKSFORGEEKS X ELIXIR
         </Badge>
 
-        <h1 className="text-2xl sm:text-6xl md:text-8xl font-extralight tracking-tight leading-[1.1]">
+        <h1
+          className={`${audiowide.className} text-4xl sm:text-6xl md:text-8xl tracking-[0.05em] leading-[1.05]`}
+        >
           BREAK THROUGH
         </h1>
 
-        <h2 className="text-base sm:text-3xl md:text-5xl text-white/90 tracking-wide leading-tight">
+        <h2
+          className={`${audiowide.className} text-xl sm:text-3xl md:text-5xl text-white/90 tracking-[0.05em] leading-tight`}
+        >
           THE WALLS OF INNOVATION
         </h2>
 

@@ -70,7 +70,7 @@ const CTA = () => {
 
       <div
         ref={contentRef}
-        className="relative z-10 text-center max-w-3xl mx-auto px-6"
+        className="relative z-10 text-center max-w-3xl mx-auto px-4 sm:px-6"
       >
         <div className="mb-6 flex justify-center">
           <Sparkles className="w-10 h-10 text-white animate-pulse" />
@@ -81,16 +81,16 @@ const CTA = () => {
         >
           Ready to Face the Titans?
         </h2>
-        <p className="text-lg md:text-xl text-gray-300 mb-10">
-          Join the <span className="text-white font-semibold">Survey Corps</span>.  
-          Unite with elite developers in humanity’s last stand  
+        <p className="text-base sm:text-xl text-gray-300 mb-8 px-2">
+          Join the <span className="text-white font-semibold">Survey Corps</span>.
+          Unite with elite developers in humanity’s last stand
           against the titans of outdated code.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <Button
             size="lg"
-            className="bg-white text-black hover:bg-gray-200 px-10 py-7 text-lg font-semibold transform hover:scale-105 transition-all duration-300"
+            className="bg-white text-black hover:bg-gray-200 px-6 py-4 text-base sm:px-10 sm:py-7 sm:text-lg font-semibold transform hover:scale-105 transition-all duration-300"
           >
             Enlist Now
           </Button>
@@ -98,8 +98,13 @@ const CTA = () => {
           <Button
             size="lg"
             variant="outline"
+
+            className="border-2 border-white text-white hover:bg-white hover:text-black px-6 py-4 text-base sm:px-10 sm:py-7 sm:text-lg font-semibold transform hover:scale-105 transition-all duration-300"
+          >
+
             className="border-2 border-white text-white hover:bg-white px-10 py-7 text-lg font-semibold transform hover:scale-105 transition-all duration-300"
             >
+
             Join Discord
           </Button>
             </a>

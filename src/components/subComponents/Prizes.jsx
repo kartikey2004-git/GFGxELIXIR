@@ -134,9 +134,17 @@ const Prizes = () => {
   ];
 
   return (
+
+    <section
+      ref={sectionRef}
+      className="relative py-8 sm:py-24 bg-black text-white overflow-hidden"
+    >
+      <div className="absolute inset-0">
+
     <section className="relative min-h-screen py-24 bg-[#050505] text-white overflow-hidden flex flex-col justify-center perspective-1000">
       
       <div className="absolute inset-0 z-0">
+
         <video
           ref={videoRef}
           src="https://res.cloudinary.com/djrs8vc5s/video/upload/f_auto,q_auto:good/v1730902345/1106_2_-1_ltl6d2.mp4"
@@ -149,6 +157,15 @@ const Prizes = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-[#050505]" />
         <div className="absolute inset-0 bg-black/40" /> 
       </div>
+
+
+      <div className="relative z-10 container mx-auto px-3 sm:px-4">
+        <div className="text-center mb-8 sm:mb-16">
+          <h2 className="text-2xl sm:text-5xl font-light tracking-tight mb-3">
+            Prize Pool
+          </h2>
+          <p className="text-sm sm:text-lg text-gray-400">
+            The spoils of victory await the bravest coders
 
       <div className="relative z-10 container mx-auto px-4">
         
@@ -164,6 +181,7 @@ const Prizes = () => {
           </motion.div>
           <p className="text-lg text-gray-400 font-light max-w-xl mx-auto">
             Choose your constellation and embark on an interstellar journey.
+
           </p>
         </div>
 
@@ -184,6 +202,16 @@ const Prizes = () => {
                 p.id === 1 ? 'lg:h-[500px] z-10' : 'lg:h-[440px] z-0'
               }`}
             >
+
+              <CardHeader className="text-center py-4 sm:py-8">
+                <div className="text-3xl sm:text-5xl md:text-6xl mb-2">{p.emoji}</div>
+
+                <CardTitle className="text-lg sm:text-2xl md:text-3xl text-white mb-1">
+                  {p.place}
+                </CardTitle>
+
+                <div className="text-xl sm:text-3xl md:text-4xl font-semibold text-white mt-1">
+
               <InteractiveCard 
                 spotlightColor={p.spotlight}
                 className={`group ${p.border} ${p.id === 1 ? 'bg-white/5 shadow-2xl' : 'bg-black/40'}`}
@@ -193,6 +221,7 @@ const Prizes = () => {
                 <h3 className={`text-xl font-medium mb-1 tracking-wide ${p.color}`}>{p.place}</h3>
                 
                 <div className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight group-hover:scale-110 transition-transform duration-300">
+
                   {p.amount}
                 </div>
 

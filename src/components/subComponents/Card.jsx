@@ -110,6 +110,24 @@ const Cards = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black" />
       </div>
 
+
+      <div className="relative z-20 container mx-auto px-3 sm:px-4 py-10 sm:py-16">
+        <div className="text-center mb-8 sm:mb-10">
+          <p className="text-xs sm:text-sm text-gray-400 uppercase tracking-widest mb-1">
+            STRATEGIC OPERATIONS CLASSIFICATION
+          </p>
+
+          <h2 className="text-2xl sm:text-4xl md:text-6xl font-light tracking-tight mb-3">
+            Battle Fronts
+          </h2>
+
+          <p className="text-sm sm:text-lg md:text-xl text-gray-300">
+            Select your division and deploy your expertise
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 pb-10 sm:pb-16">
+
       <div className="relative z-20 container mx-auto px-4 py-28">
         {/* Section Header */}
         <div ref={titleRef} className="text-center mb-24">
@@ -146,6 +164,40 @@ const Cards = () => {
               onMouseEnter={() => setActiveCard(i)}
               onMouseLeave={() => setActiveCard(null)}
             >
+
+              <CardHeader className="relative pt-4 pb-2 px-3 sm:px-4">
+                <CardTitle className="text-lg sm:text-xl md:text-2xl font-semibold text-white pr-12 sm:pr-14">
+                  {item.title}
+                </CardTitle>
+
+                <CardDescription className="text-gray-400 text-[11px] sm:text-xs md:text-sm uppercase tracking-wider mt-2">
+                  {item.desc}
+                </CardDescription>
+
+                <div
+                  className="
+                    absolute top-3 right-3 
+                    p-2 bg-white/10 rounded-lg 
+                    border border-white/10 
+                  "
+                >
+                  {cloneElement(item.icon, {
+                    className: "w-6 h-6 md:w-8 md:h-8 text-white",
+                  })}
+                </div>
+              </CardHeader>
+
+              <CardContent className="px-3 sm:px-4 pb-5 sm:pb-6">
+                <ul className="space-y-2 sm:space-y-3 text-gray-300 text-xs sm:text-sm">
+                  {item.points.map((p, idx) => (
+                    <li key={idx} className="flex items-center gap-2">
+                      <span className="text-white">▸</span> {p}
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+
               <div
                 className={`
                   relative overflow-hidden h-[300px]
@@ -202,6 +254,7 @@ const Cards = () => {
                 </div>
               </div>
             </div>
+
           ))}
         </div>
 

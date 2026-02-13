@@ -42,7 +42,7 @@ const FAQ = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative py-24 text-white overflow-hidden"
+      className="relative py-12 sm:py-24 text-white overflow-hidden"
     >
       <div className="absolute inset-0 z-0">
         <video

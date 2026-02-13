@@ -29,7 +29,7 @@ const About = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative h-screen w-full overflow-hidden  text-white flex items-center justify-end"
+      className="relative min-h-screen w-full overflow-hidden text-white flex items-center justify-center sm:justify-end"
     >
       <video
         ref={videoRef}
@@ -47,7 +47,7 @@ const About = () => {
 
       <div
         ref={contentRef}
-        className="relative z-10 max-w-xl p-6 md:p-10  shadow-2xl rounded-2xl"
+        className="relative z-10 max-w-xl p-4 sm:p-10 shadow-2xl rounded-2xl"
       >
         <CardHeader>
           <CardTitle
@@ -58,7 +58,7 @@ const About = () => {
               Briefing
             </span>
           </CardTitle>
-          <Separator className="bg-white/20 mb-4" />
+          <Separator className="bg-white/20" />
         </CardHeader>
 
         <CardContent className="space-y-6 text-gray-300">
@@ -85,7 +85,11 @@ const About = () => {
             Developers unite, adapt, and rise beyond all boundaries.
           </p>
 
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 text-left">
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-left">
+
             {aboutData.map((item, idx) => (
               <div
                 key={idx}

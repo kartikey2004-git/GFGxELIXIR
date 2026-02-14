@@ -74,17 +74,8 @@ const CTA = () => {
             </div>
         </div>
 
-<<<<<<< HEAD
-        <h2
-          className={`${sectionHeadingFont.className} text-5xl md:text-7xl tracking-[0.08em] uppercase mb-4 leading-tight`}
-        >
-          <span className="bg-gradient-to-r from-[#0080FF] via-[#0D52BD] to-[#1C05B3] bg-clip-text text-transparent">
-            Ready to Face the Unknown?
-          </span>
-=======
         <h2 className="text-5xl md:text-7xl font-light tracking-tight mb-4 leading-tight">
           Ready to Face the Unknown?
->>>>>>> 9b2c1d9dcf9f3f1ea0f3363941ab1495ddece456
         </h2>
         <p className="text-lg md:text-xl text-gray-300 mb-10">
           Join the <span className="text-white font-semibold">Stellar Corps</span>.  

@@ -125,7 +125,7 @@ export function SpotlightNavbar({
               alt="Stellaris Logo"
               width={120}
               height={32}
-              className="rotate-90 scale-[3.0] md:scale-[4.0] ml-12 md:ml-20 h-6 md:h-8 w-auto object-contain cursor-pointer"
+              className="rotate-90 scale-[5.5] md:scale-[5.0] ml-15 md:ml-15 h-6 md:h-8 w-auto object-contain cursor-pointer"
               priority
             />
           </button>
@@ -220,7 +220,7 @@ export function SpotlightNavbar({
             <div
               className="apply-button h-11 w-[312px]"
               data-hackathon-slug="stellaris"
-              data-button-theme="dark-inverted"
+              data-button-theme="dark"
             ></div>
           </motion.div>
         )}

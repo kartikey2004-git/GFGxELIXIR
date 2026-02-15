@@ -104,7 +104,7 @@ const CTA = () => {
           <div
             className="apply-button h-11 w-[312px]"
             data-hackathon-slug="stellaris"
-            data-button-theme="dark-inverted"
+            data-button-theme="dark"
           ></div>
 
           <a href="https://discord.gg/yTxvuuktdZ" target="blank">

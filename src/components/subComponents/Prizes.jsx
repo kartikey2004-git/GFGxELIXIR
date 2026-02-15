@@ -241,7 +241,7 @@ const Prizes = () => {
                 {/* Right Side: Price & Badge */}
                 <div className="w-full md:w-auto mt-2 md:mt-0 flex flex-row md:flex-col items-center md:items-end justify-between md:justify-center border-t md:border-t-0 border-white/5 pt-4 md:pt-0">
                   <p className="text-2xl md:text-3xl font-bold text-white group-hover:text-blue-300 transition-colors tracking-tight drop-shadow-md">
-                    ₹10,000
+                    100 $
                   </p>
 
                   <div className="md:mt-1.5 inline-flex items-center px-2.5 py-0.5 rounded-full bg-white/5 border border-white/10 group-hover:border-blue-500/20 group-hover:bg-blue-500/10 transition-all duration-300">
@@ -287,7 +287,7 @@ const Prizes = () => {
                 {/* Right Side: Price & Badge */}
                 <div className="w-full md:w-auto mt-2 md:mt-0 flex flex-row md:flex-col items-center md:items-end justify-between md:justify-center border-t md:border-t-0 border-white/5 pt-4 md:pt-0">
                   <p className="text-2xl md:text-3xl font-bold text-white group-hover:text-purple-300 transition-colors tracking-tight drop-shadow-md">
-                    ₹5,000
+                    $ 50
                   </p>
 
                   <div className="md:mt-1.5 inline-flex items-center px-2.5 py-0.5 rounded-full bg-white/5 border border-white/10 group-hover:border-purple-500/20 group-hover:bg-purple-500/10 transition-all duration-300">

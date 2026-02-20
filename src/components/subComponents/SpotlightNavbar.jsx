@@ -19,6 +19,18 @@ export function SpotlightNavbar({
   const ambienceX = useRef(0);
   const observerRef = useRef(null);
 
+  // devfolio button
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   // IntersectionObserver for active section detection
   useEffect(() => {
     const sections = navItems
@@ -55,18 +67,6 @@ export function SpotlightNavbar({
       }
     };
   }, [activeIndex]);
-
-  // devfolio button
-  // useEffect(() => {
-  //   const script = document.createElement("script");
-  //   script.src = "https://apply.devfolio.co/v2/sdk.js";
-  //   script.async = true;
-  //   script.defer = true;
-  //   document.body.appendChild(script);
-  //   return () => {
-  //     document.body.removeChild(script);
-  //   };
-  // }, []);
 
   useEffect(() => {
     if (!navRef.current) return;
@@ -217,11 +217,11 @@ export function SpotlightNavbar({
             </ul>
 
             {/* devfolio button */}
-          <div
-            className="apply-button h-11 w-[312px]"
-            data-hackathon-slug="stellaris"
-            data-button-theme="light"
-          ></div>
+            <div
+              className="apply-button h-11 w-[312px]"
+              data-hackathon-slug="stellaris"
+              data-button-theme="light"
+            ></div>
           </motion.div>
         )}
       </AnimatePresence>

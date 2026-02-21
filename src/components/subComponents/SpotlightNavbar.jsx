@@ -7,6 +7,7 @@ import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { navItems } from "@/lib/data/data";
+import { useDevfolio } from "@/hooks/useDevfolio";
 
 export function SpotlightNavbar({
   className,
@@ -19,17 +20,8 @@ export function SpotlightNavbar({
   const ambienceX = useRef(0);
   const observerRef = useRef(null);
 
-  // devfolio button
-  // useEffect(() => {
-  //   const script = document.createElement("script");
-  //   script.src = "https://apply.devfolio.co/v2/sdk.js";
-  //   script.async = true;
-  //   script.defer = true;
-  //   document.body.appendChild(script);
-  //   return () => {
-  //     document.body.removeChild(script);
-  //   };
-  // }, []);
+  // Initialize Devfolio buttons
+  useDevfolio();
 
   // IntersectionObserver for active section detection
   useEffect(() => {

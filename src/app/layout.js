@@ -34,6 +34,7 @@ export default function RootLayout({ children }) {
           src="https://apply.devfolio.co/v2/sdk.js"
           strategy="afterInteractive"
         />
+        
         {/* <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script> */}
       </body>
     </html>

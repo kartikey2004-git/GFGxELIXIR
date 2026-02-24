@@ -21,7 +21,14 @@ export function SpotlightNavbar({
   const observerRef = useRef(null);
 
   // Initialize Devfolio buttons
-  useDevfolio();
+  // useDevfolio();
+
+useEffect(() => {
+  if (isOpen && window.devfolio?.initialize) {
+    window.devfolio.initialize();
+  }
+}, [isOpen]);
+
 
   // IntersectionObserver for active section detection
   useEffect(() => {

@@ -16,7 +16,7 @@ const CTA = () => {
   const contentRef = useRef(null);
 
   // Initialize Devfolio buttons
-  useDevfolio();
+  // useDevfolio();
 
   useEffect(() => {
     let ctx = gsap.context(() => {

@@ -72,11 +72,11 @@ const Hero = () => {
           TRANSCEND THE CODE, CONQUER THE COSMOS.
         </h2>
 
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 mt-4 w-full max-w-sm sm:w-auto px-2">
-          <Button
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 mt-4 w-full max-w-sm sm:w-auto px-2 items-center justify-center">
+          <Button 
             size="lg"
             variant="outline"
-            className="border-2 border-white text-white hover:bg-white px-4 sm:px-10 py-3 sm:py-6 text-sm sm:text-lg font-semibold tracking-wide"
+            className="border-2 border-white text-white hover:bg-white px-4 sm:px-10 py-3 sm:py-5.5 text-sm sm:text-lg font-semibold tracking-wide"
             onClick={() => {
               document
                 .getElementById("mission-briefing")
@@ -87,15 +87,19 @@ const Hero = () => {
             Mission Briefing
           </Button>
 
-          {/* <Button
-            size="lg"
-            variant="outline"
-            className="border-2 border-white text-white hover:bg-white px-6 sm:px-10 py-5 sm:py-6 text-base sm:text-lg font-semibold tracking-wide"
-            onClick={() => window.open('https://registration.example.com', '_blank')}
-          >
-            <Target className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
-            Register Now
-          </Button> */}
+          {/* <div>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-2 border-white text-white hover:bg-white px-6 sm:px-10 py-5 sm:py-6 text-base sm:text-lg font-semibold tracking-wide"
+              onClick={() =>
+                window.open("https://registration.example.com", "_blank")
+              }
+            >
+              <Target className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
+              Register Now
+            </Button>
+          </div> */}
 
           {/* devfolio button */}
           <div

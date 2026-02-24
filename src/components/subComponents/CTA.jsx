@@ -91,9 +91,9 @@ const CTA = () => {
           way to the singularity of innovation.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-6 justify-center pt-2">
+        <div className="flex flex-col sm:flex-row gap-6 justify-center pt-2 items-center">
           {/* devfolio button */}
-          <div
+          <div 
             className="apply-button h-11 w-[312px]"
             data-hackathon-slug="stellaris"
             data-button-theme="light"
@@ -106,7 +106,7 @@ const CTA = () => {
             style="height: 44px; width: 312px"
           ></div> */}
 
-          <a href="https://discord.gg/yTxvuuktdZ" target="blank">
+          <a href="https://discord.gg/vkkBGt7eHY" target="blank">
             <Button
               size="lg"
               variant="outline"

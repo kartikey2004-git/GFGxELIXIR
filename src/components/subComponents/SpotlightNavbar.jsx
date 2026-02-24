@@ -5,7 +5,6 @@ import { animate, motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import { navItems } from "@/lib/data/data";
 import { useDevfolio } from "@/hooks/useDevfolio";
 
@@ -22,6 +21,12 @@ export function SpotlightNavbar({
 
   // Initialize Devfolio buttons
   useDevfolio();
+
+  useEffect(() => {
+  if (isOpen && window.devfolio) {
+    window.devfolio.reload();
+  }
+}, [isOpen]);
 
   // IntersectionObserver for active section detection
   useEffect(() => {
@@ -214,6 +219,7 @@ export function SpotlightNavbar({
               data-hackathon-slug="stellaris"
               data-button-theme="light"
             ></div>
+
           </motion.div>
         )}
       </AnimatePresence>

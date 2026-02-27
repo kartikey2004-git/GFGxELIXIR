@@ -5,7 +5,6 @@ import { animate, motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import { navItems } from "@/lib/data/data";
 import { useDevfolio } from "@/hooks/useDevfolio";
 
@@ -28,7 +27,6 @@ useEffect(() => {
     window.devfolio.initialize();
   }
 }, [isOpen]);
-
 
   // IntersectionObserver for active section detection
   useEffect(() => {
@@ -221,6 +219,7 @@ useEffect(() => {
               data-hackathon-slug="stellaris"
               data-button-theme="light"
             ></div>
+
           </motion.div>
         )}
       </AnimatePresence>

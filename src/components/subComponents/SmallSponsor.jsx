@@ -60,7 +60,7 @@ const SmallSponsor = () => {
               className="group relative bg-gray-800/20"
             >
               <div className="absolute inset-0 z-20 pointer-events-none overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity">
-                <div className="w-full h-[2px] bg-blue-400/50 shadow-[0_0_15px_rgba(59,130,246,0.8)] animate-[scan_2s_linear_infinite]" />
+                <div className="w-full h-0.5 bg-blue-400/50 shadow-[0_0_15px_rgba(59,130,246,0.8)] animate-[scan_2s_linear_infinite]" />
               </div>
 
               <Card className="relative h-full bg-white/[0.02] border border-white/10 rounded-none transition-all duration-500 group-hover:bg-blue-500/[0.05] group-hover:border-blue-500/50">

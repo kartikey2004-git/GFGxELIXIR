@@ -25,10 +25,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-transparent`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
       >
         <Analytics />
-        <BackgroundVideo />
+        {/* <BackgroundVideo /> */}
         <GSAPProvider>{children}</GSAPProvider>
         <Script
           src="https://apply.devfolio.co/v2/sdk.js"

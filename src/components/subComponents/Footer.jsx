@@ -122,7 +122,7 @@ export default function Footer() {
                 </Hint>
                 <Hint label="Join our Discord">
                   <Link
-                    href="https://discord.com/invite/yTxvuuktdZ"
+                    href="https://discord.gg/vkkBGt7eHY"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-white transition-all duration-200 hover:scale-105  p-1 rounded"

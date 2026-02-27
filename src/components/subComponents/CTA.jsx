@@ -91,13 +91,13 @@ const CTA = () => {
           way to the singularity of innovation.
         </p>
 
-        <div className="flex flex-col items-center sm:flex-row gap-6 justify-center pt-2">
+        <div className="flex flex-col sm:flex-row gap-6 justify-center pt-2 items-center">
           {/* devfolio button */}
-          <div
+          <div 
             className="apply-button h-11 w-[312px]"
             data-hackathon-slug="stellaris"
             data-button-theme="light"
-          ></div>
+          ></div> 
 
           {/* <div
             class="apply-button"

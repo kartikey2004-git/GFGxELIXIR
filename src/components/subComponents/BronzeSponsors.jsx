@@ -7,11 +7,11 @@ import {
   animateCardsStagger, 
 } from "@/lib/gsap-utils";
 import Image from "next/image";
-import { sponsorsData } from "@/lib/data/data";
+import { BronzeSponsorsData } from "@/lib/data/data";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Sponsor = () => {
+const BronzeSponsors = () => {
   const sectionRef = useRef(null);
   const cardsRef = useRef([]);
 
@@ -25,18 +25,19 @@ const Sponsor = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative py-36 bg-[#020202] text-white overflow-hidden">
-      {/* Background */}      
+    <section ref={sectionRef} className="relative py-10 bg-[#020202] text-white overflow-hidden">
+
       <div className="relative z-10 max-w-7xl mx-auto px-6">
-        <div className="text-center mb-24">
-          <h2 className="text-4xl md:text-6xl font-thin tracking-[0.5em] uppercase text-white/90">
-            Past Sponsors
+        <div className="text-center mb-14">
+          <h2 className="text-xl md:text-2xl font-thin tracking-[0.5em] uppercase text-white/90">
+            Bronze Sponsors
           </h2>
           <p className="text-blue-400 font-mono text-xs mt-4 tracking-[0.3em] uppercase italic">Linked to Mission Control</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {sponsorsData.map((sponsor, i) => (
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> */}
+        <div className="flex flex-col md:flex-row justify-center items-center gap-20">
+          {BronzeSponsorsData.map((sponsor, i) => (
             <div
               key={i}
               ref={(el) => (cardsRef.current[i] = el)}
@@ -46,7 +47,7 @@ const Sponsor = () => {
               <div className="absolute -bottom-2 -right-2 w-4 h-4 border-b-2 border-r-2 border-blue-500 opacity-0 group-hover:opacity-100 transition-all duration-500" />
 
               <div 
-                className="relative bg-white/[0.03] border border-white/10 p-10 backdrop-blur-md transition-all duration-500 group-hover:bg-white/[0.07] group-hover:border-blue-500/50"
+                className="relative bg-white/3 w-xs md:w-sm border border-white/10 p-10 backdrop-blur-md transition-all duration-500 group-hover:bg-white/[0.07] group-hover:border-blue-500/50"
                 style={{
                   clipPath: "polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%)"
                 }}
@@ -88,4 +89,4 @@ const Sponsor = () => {
   );
 };
 
-export default Sponsor;
+export default BronzeSponsors;

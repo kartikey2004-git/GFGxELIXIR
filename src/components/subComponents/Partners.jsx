@@ -8,11 +8,12 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { animateSectionFadeIn, animateCardsStagger } from "@/lib/gsap-utils";
 // import Image from "next/image";
-import { pastSponsorsData, sponsorsData } from "@/lib/data/data";
+import { SilverSponsorsData } from "@/lib/data/data";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const SmallSponsor = () => {
+const Partners = () => {
   const sectionRef = useRef(null);
   const cardsRef = useRef([]);
 
@@ -28,32 +29,41 @@ const SmallSponsor = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative py-40 text-white overflow-hidden"
+      className="relative py-30 text-white overflow-hidden"
     >
       {/* Background */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-white/5 rounded-full pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] border border-white/10 rounded-full pointer-events-none" />
+      {/* <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-white/5 rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] border border-white/10 rounded-full pointer-events-none" /> */}
+
+      <div className="text-center flex flex-col items-center mb-15">
+        <div className="flex items-center gap-4 mb-4">
+          <div className="h-[1px] w-12 bg-blue-500/50" />
+          <span className="text-blue-400 font-mono text-[16px] tracking-[0.5em] uppercase">
+            Sector Beta // Partners
+          </span>
+          <div className="h-[1px] w-12 bg-blue-500/50" />
+        </div>
+        <h2 className="text-5xl md:text-7xl font-extralight tracking-tighter uppercase italic">
+          Platform{" "}
+          <span className="font-bold bg-gradient-to-r from-[#0080FF] via-[#0D52BD] to-[#1C05B3] bg-clip-text text-transparent">
+            Partners
+          </span>
+        </h2>
+      </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
-        <div className="flex flex-col items-center mb-28">
-          <div className="flex items-center gap-4 mb-4">
-            <div className="h-[1px] w-12 bg-blue-500/50" />
-            <span className="text-blue-400 font-mono text-[12px] tracking-[0.5em] uppercase">
-              Sector Alpha // Sponsors
-            </span>
-            <div className="h-[1px] w-12 bg-blue-500/50" />
-          </div>
-          <h2 className="text-5xl md:text-7xl font-extralight tracking-tighter uppercase italic">
-            Platform{" "}
-            <span className="font-bold bg-gradient-to-r from-[#0080FF] via-[#0D52BD] to-[#1C05B3] bg-clip-text text-transparent">
-              Partner
-            </span>
+        {/* <div className="text-center mb-24">
+          <h2 className="text-xl md:text-2xl font-thin tracking-[0.5em] uppercase text-white/90">
+            Silver Sponsors
           </h2>
-        </div>
+          <p className="text-blue-400 font-mono text-xs mt-4 tracking-[0.3em] uppercase italic">
+            Linked to Mission Control
+          </p>
+        </div> */}
 
         {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"> */}
         <div className="flex justify-center items-center gap-6">
-          {sponsorsData.map((sponsor, i) => (
+          {SilverSponsorsData.map((sponsor, i) => (
             <div
               key={i}
               ref={(el) => (cardsRef.current[i] = el)}
@@ -70,7 +80,6 @@ const SmallSponsor = () => {
                   </span>
 
                   <div
-                    // className="relative w-45 h-42 bg-white/5 flex items-center justify-center"
                     className="relative w-45 h-42 bg-white/5 flex items-center justify-center transition-transform duration-900 group-hover:rotate-[360deg]"
                     style={{
                       clipPath:
@@ -78,20 +87,19 @@ const SmallSponsor = () => {
                     }}
                   >
                     <div className="absolute">
-                      {/* <img
+                      <Image
                         width={130}
                         height={100}
                         src={sponsor.image}
                         alt={sponsor.alt}
-                        className="object-contain"
-                        // className="object-contain filter grayscale group-hover:grayscale-0 brightness-100 group-hover:brightness-100 transition-all duration-1000"
-                      /> */}
-                      <a href="https://stellaris.devfolio.co" target="_blank">
+                        className="object-contain filter grayscale group-hover:grayscale-0 brightness-100 group-hover:brightness-100 transition-all duration-1000"
+                      />
+                      {/* <a href="https://stellaris.devfolio.co" target="_blank">
                         <img
                           src="./sponsors/DevfolioDark.webp"
                           alt="Devfolio Logo"
                         />
-                      </a>
+                      </a> */}
                     </div>
                   </div>
 
@@ -127,4 +135,4 @@ const SmallSponsor = () => {
   );
 };
 
-export default SmallSponsor;
+export default Partners;

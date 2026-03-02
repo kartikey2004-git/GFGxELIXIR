@@ -23,7 +23,7 @@ const Hero = () => {
   const contentRef = useRef(null);
 
   // Initialize Devfolio buttons
-  // useDevfolio();
+  useDevfolio();
 
   useEffect(() => {
     let ctx = gsap.context(() => {
@@ -73,19 +73,21 @@ const Hero = () => {
         </h2>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 mt-4 w-full max-w-sm sm:w-auto px-2 items-center justify-center">
-          <Button 
-            size="lg"
-            variant="outline"
-            className="border-2 border-white text-white hover:bg-white px-4 sm:px-10 py-3 sm:py-5.5 text-sm sm:text-lg font-semibold tracking-wide"
-            onClick={() => {
-              document
-                .getElementById("mission-briefing")
-                .scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            <Code className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
-            Mission Briefing
-          </Button>
+          <div>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-2 w-80 border-white text-white hover:bg-white px-4 sm:px-10 sm:py-5.5 text-sm sm:text-lg font-semibold tracking-wide"
+              onClick={() => {
+                document
+                  .getElementById("mission-briefing")
+                  .scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              <Code className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
+              Mission Briefing
+            </Button>
+          </div>
 
           {/* <div>
             <Button
@@ -103,10 +105,10 @@ const Hero = () => {
 
           {/* devfolio button */}
           <div
-            className="apply-button h-11 w-[312px] relative z-50"
+            className="apply-button h-25 w-[312px] relative z-50"
             data-hackathon-slug="stellaris"
             data-button-theme="light"
-            style={{ minHeight: "44px", minWidth: "320px" }}
+            // style={{ minHeight: "44px", minWidth: "320px" }}
           ></div>
         </div>
 

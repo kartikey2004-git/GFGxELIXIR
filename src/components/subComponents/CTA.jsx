@@ -16,7 +16,7 @@ const CTA = () => {
   const contentRef = useRef(null);
 
   // Initialize Devfolio buttons
-  // useDevfolio();
+  useDevfolio();
 
   useEffect(() => {
     let ctx = gsap.context(() => {
@@ -110,7 +110,7 @@ const CTA = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border-2 border-white text-white hover:bg-white px-6 py-3 sm:px-8 sm:py-4 text-base md:text-lg font-medium transform hover:scale-105 transition-all duration-300"
+              className="w-80 border-2 border-white text-white hover:bg-white px-6 py-3 sm:px-8 sm:py-5.5 text-base md:text-lg font-medium transform hover:scale-105 transition-all duration-300"
             >
               Join Discord
             </Button>

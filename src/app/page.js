@@ -9,8 +9,9 @@ import FAQ from "@/components/subComponents/FAQ";
 import CTA from "@/components/subComponents/CTA";
 import Footer from "@/components/subComponents/Footer";
 import MissionTimeline from "@/components/subComponents/MissionTimeline";
-import SmallSponsor from "@/components/subComponents/SmallSponsor";
-import BigSponsor from "@/components/subComponents/BigSponsor";
+import GoldSponsors from "@/components/subComponents/GoldSponsor";
+import BronzeSponsors from "@/components/subComponents/BronzeSponsors";
+import Partners from "@/components/subComponents/Partners";
 
 export default function Home() {
   return (
@@ -33,12 +34,16 @@ export default function Home() {
         <MissionTimeline />
       </section>
 
-      {/* <section id="sponsors" className="relative z-10 scroll-mt-20">
-        <BigSponsor />
-      </section> */}
+      <section id="sponsors" className="relative z-10 scroll-mt-20">
+        <GoldSponsors />
+      </section>
 
       <section id="sponsors" className="relative z-10 scroll-mt-20">
-        <SmallSponsor />
+        <BronzeSponsors />
+      </section>
+
+      <section id="sponsors" className="relative z-10 scroll-mt-20">
+        <Partners />
       </section>
 
       <section id="prizes" className="relative z-10 scroll-mt-20">

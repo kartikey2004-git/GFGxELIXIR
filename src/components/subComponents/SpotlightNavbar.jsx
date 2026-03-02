@@ -22,11 +22,11 @@ export function SpotlightNavbar({
   // Initialize Devfolio buttons
   // useDevfolio();
 
-useEffect(() => {
-  if (isOpen && window.devfolio?.initialize) {
-    window.devfolio.initialize();
-  }
-}, [isOpen]);
+// useEffect(() => {
+//   if (isOpen && window.devfolio?.initialize) {
+//     window.devfolio.initialize();
+//   }
+// }, [isOpen]);
 
   // IntersectionObserver for active section detection
   useEffect(() => {
@@ -214,11 +214,11 @@ useEffect(() => {
             </ul>
 
             {/* devfolio button */}
-            <div
+            {/* <div
               className="apply-button h-11 w-[312px]"
               data-hackathon-slug="stellaris"
               data-button-theme="light"
-            ></div>
+            ></div> */}
 
           </motion.div>
         )}

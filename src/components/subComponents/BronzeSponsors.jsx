@@ -2,9 +2,9 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { 
-  animateSectionFadeIn, 
-  animateCardsStagger, 
+import {
+  animateSectionFadeIn,
+  animateCardsStagger,
 } from "@/lib/gsap-utils";
 import Image from "next/image";
 import { BronzeSponsorsData } from "@/lib/data/data";
@@ -46,7 +46,7 @@ const BronzeSponsors = () => {
               <div className="absolute -top-2 -left-2 w-4 h-4 border-t-2 border-l-2 border-blue-500 opacity-0 group-hover:opacity-100 transition-all duration-500" />
               <div className="absolute -bottom-2 -right-2 w-4 h-4 border-b-2 border-r-2 border-blue-500 opacity-0 group-hover:opacity-100 transition-all duration-500" />
 
-              <div 
+              <div
                 className="relative bg-white/3 w-xs md:w-sm border border-white/10 p-10 backdrop-blur-md transition-all duration-500 group-hover:bg-white/[0.07] group-hover:border-blue-500/50"
                 style={{
                   clipPath: "polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%)"
@@ -68,7 +68,7 @@ const BronzeSponsors = () => {
                   </div>
 
                   <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-blue-500/30 to-transparent mb-6" />
-                  
+
                   <h3 className="text-[10px] font-mono tracking-[0.4em] uppercase text-blue-400 group-hover:text-blue-300 transition-colors">
                     Sponsor Tier
                   </h3>
@@ -78,7 +78,7 @@ const BronzeSponsors = () => {
                 </div>
 
                 <div className="absolute bottom-2 left-4 text-[8px] font-mono text-white/20 uppercase">
-                  Ref: SEC_0{i+1}
+                  Ref: SEC_0{i + 1}
                 </div>
               </div>
             </div>

@@ -7,7 +7,7 @@ import {
   Trophy,
   Users,
   Zap,
-  Award, 
+  Award,
   Crown
 } from "lucide-react";
 
@@ -168,12 +168,14 @@ export const timelineData = [
 export const GoldSponsorsData = [
   // { tier: "India Blockchain Week 2024", alt: "India Blockchain Week 2024", image: "/sponsors/ibw.svg", glow: "from-blue-500/20" },
   { tier: "Cyrene AI", alt: "Cyrene AI Logo", image: "/sponsors/cyrene-2.png", glow: "from-purple-500/20" },
-  { tier: "GitHub", alt: "GitHub Logo", image: "/sponsors/github-logo.png", glow: "from-indigo-500/20" }, 
+  { tier: "GitHub", alt: "GitHub Logo", image: "/sponsors/github-logo.png", glow: "from-indigo-500/20" },
   // { tier: "Polygon", alt: "Polygon", image: "/sponsors/Polygon.svg", glow: "from-pink-500/20" },
 ];
 export const SilverSponsorsData = [
   // { tier: "India Blockchain Week 2024", alt: "India Blockchain Week 2024", image: "/sponsors/ibw.svg", glow: "from-blue-500/20" },
-  { tier: "Devfolio", alt: "Devfolio Logo", image: "/sponsors/DevfolioDark.webp", glow: "from-cyan-500/20" },
+  { tier: "Featherless.ai", alt: "Featherless.ai Logo", image: "/sponsors/featherlessai.png", glow: "from-slate-500/10" },
+  { tier: "CertifyOS", alt: "CertifyOS Logo", image: "/sponsors/FREE CREDITS (3).png", glow: "from-cyan-500/20" },
+
   // { tier: "QuillAudits", alt: "QuillAudits", image: "/sponsors/QuillAudit.webp", glow: "from-purple-500/20" },
   // { tier: "ETHIndia", alt: "ETHIndia", image: "/sponsors/ethindia-logo.svg", glow: "from-pink-500/20" },
   // { tier: "Polygon", alt: "Polygon", image: "/sponsors/Polygon.svg", glow: "from-indigo-500/20" },
@@ -182,62 +184,62 @@ export const BronzeSponsorsData = [
   // { tier: "India Blockchain Week 2024", alt: "India Blockchain Week 2024", image: "/sponsors/ibw.svg", glow: "from-blue-500/20" },
   { tier: "Gen", alt: "Gen Logo", image: "/sponsors/xyz-logo-white.png", glow: "from-cyan-500/20" },
   { tier: "Windsurf", alt: "Windsurf Logo", image: "/sponsors/Windsurf-white-symbol.png", glow: "from-purple-500/20" },
-  // { tier: "ETHIndia", alt: "ETHIndia", image: "/sponsors/ethindia-logo.svg", glow: "from-pink-500/20" },
+  { tier: "E-certify", alt: "E-certify Logo", image: "/sponsors/ecertifyhub2.png", glow: "from-pink-500/20" },
   // { tier: "Polygon", alt: "Polygon", image: "/sponsors/Polygon.svg", glow: "from-indigo-500/20" },
 ];
 
 
 export const navItems = [
-    { label: "Home", href: "#hero" },
-    { label: "About", href: "#mission-briefing" },
-    { label: "Tracks", href: "#tracks" },
-    { label: "Timelines", href: "#timeline" },
-    { label: "Sponsors", href: "#sponsors" },
-    { label: "Rewards", href: "#prizes" },
-    { label: "FAQ", href: "#faq" },
-  ];
+  { label: "Home", href: "#hero" },
+  { label: "About", href: "#mission-briefing" },
+  { label: "Tracks", href: "#tracks" },
+  { label: "Timelines", href: "#timeline" },
+  { label: "Sponsors", href: "#sponsors" },
+  { label: "Rewards", href: "#prizes" },
+  { label: "FAQ", href: "#faq" },
+];
 
 export const quickLinks = [
-    { label: "Home", href: "#hero" },
-    { label: "Tracks", href: "#tracks" },
-    { label: "Timelines", href: "#timeline" },
-    { label: "Sponsors", href: "#sponsors" },
-    { label: "Rewards", href: "#prizes" },
-  ];
+  { label: "Home", href: "#hero" },
+  { label: "Tracks", href: "#tracks" },
+  { label: "Timelines", href: "#timeline" },
+  { label: "Sponsors", href: "#sponsors" },
+  { label: "Rewards", href: "#prizes" },
+];
 
 
 export const winners = [
-    {
-      place: "1st Place",
-      amount: "$500",
-      icon: Trophy,
-      color: "text-yellow-100",
-      spotlight: "rgba(253, 224, 71, 0.2)",
-      border: "hover:border-yellow-500/40",
-      perks: ["Mentorship", "Internship", "Certificate"],
-      id: 1,
-      order: "lg:order-2",
-    },
-    {
-      place: "2nd Place",
-      amount: "$300",
-      icon: Crown,
-      color: "text-slate-200",
-      spotlight: "rgba(226, 232, 240, 0.2)",
-      border: "hover:border-slate-400/40",
-      perks: ["Mentorship", "Interview Prep", "Certificate"],
-      id: 2,
-      order: "lg:order-1",
-    },
-    {
-      place: "3rd Place",
-      amount: "$200",
-      icon: Award,
-      color: "text-orange-100",
-      spotlight: "rgba(253, 186, 116, 0.2)",
-      border: "hover:border-orange-500/40",
-      perks: ["Mentorship", "Swag", "Certificate"],
-      id: 3,
-      order: "lg:order-3",
-    },
-  ];
+  {
+    place: "1st Place",
+    amount: "$500",
+    icon: Trophy,
+    color: "text-yellow-100",
+    spotlight: "rgba(253, 224, 71, 0.2)",
+    border: "hover:border-yellow-500/40",
+    perks: ["Mentorship", "Internship", "Certificate"],
+    id: 1,
+    order: "lg:order-2",
+  },
+  {
+    place: "2nd Place",
+    amount: "$300",
+    icon: Crown,
+    color: "text-slate-200",
+    spotlight: "rgba(226, 232, 240, 0.2)",
+    border: "hover:border-slate-400/40",
+    perks: ["Mentorship", "Interview Prep", "Certificate"],
+    id: 2,
+    order: "lg:order-1",
+  },
+  {
+    place: "3rd Place",
+    amount: "$200",
+    icon: Award,
+    color: "text-orange-100",
+    spotlight: "rgba(253, 186, 116, 0.2)",
+    border: "hover:border-orange-500/40",
+    perks: ["Mentorship", "Swag", "Certificate"],
+    id: 3,
+    order: "lg:order-3",
+  },
+];

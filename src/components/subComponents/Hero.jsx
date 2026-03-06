@@ -48,15 +48,15 @@ const Hero = () => {
     >
       <div
         ref={contentRef}
-        className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4 space-y-4 pt-16 sm:pt-20"
+        className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4 gap-1 pt-8 sm:pt-10"
       >
-        <Badge className="px-3 py-1.5 text-xs sm:text-sm bg-white/10 backdrop-blur-sm border-white/20 text-white shadow-lg translate-y-4 sm:translate-y-2">
+        <Badge className="px-3 py-1.5 text-xs sm:text-sm bg-white/10 backdrop-blur-sm border-white/20 text-white shadow-lg">
           COMMAND BRANCH: GEEKSFORGEEKS X ELIXIR
         </Badge>
 
-        <div className="relative flex items-center justify-center w-full h-20 sm:h-30 md:h-40 lg:h-52">
+        <div className="relative flex items-center justify-center w-full h-8 sm:h-12 md:h-20 lg:h-28">
           {/* The Image is now absolute, so its "transparent border" won't push anything */}
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none translate-x-2 translate-y-6 sm:translate-x-5 sm:translate-y-11">
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none translate-x-2 sm:translate-x-5">
             <Image
               src="/stellaris-logo.webp"
               alt="Stellaris Logo"
@@ -112,7 +112,7 @@ const Hero = () => {
             className="apply-button h-25 w-[312px] relative z-50"
             data-hackathon-slug="stellaris"
             data-button-theme="light"
-            // style={{ minHeight: "44px", minWidth: "320px" }}
+          // style={{ minHeight: "44px", minWidth: "320px" }}
           ></div>
         </div>
 

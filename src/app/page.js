@@ -10,6 +10,7 @@ import CTA from "@/components/subComponents/CTA";
 import Footer from "@/components/subComponents/Footer";
 import MissionTimeline from "@/components/subComponents/MissionTimeline";
 import GoldSponsors from "@/components/subComponents/GoldSponsor";
+import SilverSponsors from "@/components/subComponents/SilverSponsers";
 import BronzeSponsors from "@/components/subComponents/BronzeSponsors";
 import Partners from "@/components/subComponents/Partners";
 
@@ -36,6 +37,10 @@ export default function Home() {
 
       <section id="sponsors" className="relative z-10 scroll-mt-20">
         <GoldSponsors />
+      </section>
+
+      <section id="sponsors" className="relative z-10 scroll-mt-20">
+        <SilverSponsors />
       </section>
 
       <section id="sponsors" className="relative z-10 scroll-mt-20">

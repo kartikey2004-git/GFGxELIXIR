@@ -45,6 +45,9 @@ export default function Footer() {
               <p className="text-gray-400 text-base md:text-lg font-semibold">
                 24 Hours of Innovation
               </p>
+              <p className="text-gray-400 text-base md:text-lg font-semibold">
+                Venue: ABES Engineering College, Ghaziabad
+              </p>
             </div>
 
             {/* Quicklinks */}
@@ -82,8 +85,8 @@ export default function Footer() {
                     className="hover:text-blue-400 transition-all duration-200 hover:scale-105"
                   />
                 </Hint>
-                <a 
-                  href="mailto:techcommunityelixir@gmail.com" 
+                <a
+                  href="mailto:techcommunityelixir@gmail.com"
                   className="hover:text-blue-400 transition-all duration-200 hover:translate-y-[-2px] cursor-pointer"
                 >
                   techcommunityelixir@gmail.com

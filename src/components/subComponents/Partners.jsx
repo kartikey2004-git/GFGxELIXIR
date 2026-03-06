@@ -63,61 +63,53 @@ const Partners = () => {
 
         {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"> */}
         <div className="flex justify-center items-center gap-6">
-          {SilverSponsorsData.map((sponsor, i) => (
-            <div
-              key={i}
-              ref={(el) => (cardsRef.current[i] = el)}
-              className="group relative bg-gray-800/20"
-            >
-              <div className="absolute inset-0 z-20 pointer-events-none overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity">
-                <div className="w-full h-0.5 bg-blue-400/50 shadow-[0_0_15px_rgba(59,130,246,0.8)] animate-[scan_2s_linear_infinite]" />
-              </div>
+          <div
+            className="group relative bg-gray-800/20"
+          >
+            <div className="absolute inset-0 z-20 pointer-events-none overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity">
+              <div className="w-full h-0.5 bg-blue-400/50 shadow-[0_0_15px_rgba(59,130,246,0.8)] animate-[scan_2s_linear_infinite]" />
+            </div>
 
-              <Card className="relative h-full bg-white/[0.02] border border-white/10 rounded-none transition-all duration-500 group-hover:bg-blue-500/[0.05] group-hover:border-blue-500/50">
-                <CardContent className="p-8 flex flex-col items-center justify-between min-h-[300px]">
-                  <span className="self-start font-mono text-[9px] text-white/30 group-hover:text-blue-400 transition-colors">
-                    {sponsor.id}
-                  </span>
+            <Card className="relative h-full bg-white/[0.02] border border-white/10 rounded-none transition-all duration-500 group-hover:bg-blue-500/[0.05] group-hover:border-blue-500/50">
+              <CardContent className="p-8 flex flex-col items-center justify-between min-h-[300px]">
+                <span className="self-start font-mono text-[9px] text-white/30 group-hover:text-blue-400 transition-colors">
+                  SEC_BETA_01
+                </span>
 
-                  <div
-                    className="relative w-45 h-42 bg-white/5 flex items-center justify-center transition-transform duration-900 group-hover:rotate-[360deg]"
-                    style={{
-                      clipPath:
-                        "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)",
-                    }}
-                  >
-                    <div className="absolute">
+                <div
+                  className="relative w-45 h-42 bg-white/5 flex items-center justify-center transition-transform duration-900 group-hover:rotate-[360deg]"
+                  style={{
+                    clipPath:
+                      "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)",
+                  }}
+                >
+                  <div className="absolute">
+                    <a href="https://stellaris.devfolio.co" target="_blank" rel="noopener noreferrer">
                       <Image
                         width={130}
                         height={100}
-                        src={sponsor.image}
-                        alt={sponsor.alt}
+                        src="/sponsors/DevfolioDark.webp"
+                        alt="Devfolio Logo"
                         className="object-contain filter grayscale group-hover:grayscale-0 brightness-100 group-hover:brightness-100 transition-all duration-1000"
                       />
-                      {/* <a href="https://stellaris.devfolio.co" target="_blank">
-                        <img
-                          src="./sponsors/DevfolioDark.webp"
-                          alt="Devfolio Logo"
-                        />
-                      </a> */}
-                    </div>
+                    </a>
                   </div>
+                </div>
 
-                  <div className="w-full text-center mt-6">
-                    <p className="text-[10px] font-mono tracking-widest text-white/40 mb-1 group-hover:text-blue-300">
-                      AUTHORIZED ENTITY
-                    </p>
-                    <h3 className="text-xs font-bold tracking-widest uppercase leading-tight">
-                      {sponsor.tier}
-                    </h3>
-                  </div>
+                <div className="w-full text-center mt-6">
+                  <p className="text-[10px] font-mono tracking-widest text-white/40 mb-1 group-hover:text-blue-300">
+                    AUTHORIZED ENTITY
+                  </p>
+                  <h3 className="text-xs font-bold tracking-widest uppercase leading-tight">
+                    Devfolio
+                  </h3>
+                </div>
 
-                  <div className="absolute top-0 left-0 w-2 h-2 border-t border-l border-blue-500/0 group-hover:border-blue-500/100 transition-all duration-500" />
-                  <div className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-blue-500/0 group-hover:border-blue-500/100 transition-all duration-500" />
-                </CardContent>
-              </Card>
-            </div>
-          ))}
+                <div className="absolute top-0 left-0 w-2 h-2 border-t border-l border-blue-500/0 group-hover:border-blue-500/100 transition-all duration-500" />
+                <div className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-blue-500/0 group-hover:border-blue-500/100 transition-all duration-500" />
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
 

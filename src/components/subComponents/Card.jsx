@@ -195,7 +195,7 @@ const Cards = () => {
         {/* Bottom Tagline */}
         <div className="mt-20 flex items-center justify-center gap-6">
           <div className="w-20 h-px bg-gradient-to-r from-transparent to-white/20" />
-          <p className="text-white/60 text-xs tracking-[0.4em] uppercase font-light">
+          <p className="text-white/90 text-sm md:text-base tracking-[0.3em] uppercase font-medium">
             4 Dimensions • Infinite Universe
           </p>
           <div className="w-20 h-px bg-gradient-to-l from-transparent to-white/20" />

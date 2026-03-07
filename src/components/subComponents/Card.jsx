@@ -151,16 +151,15 @@ const Cards = () => {
                   {item.number}
                 </div>
 
-                {/* Animated Glow Ring — hidden on mobile for performance */}
-                <div className="absolute top-8 left-8 w-20 h-20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 hidden md:block">
-                  <div className="absolute inset-0 rounded-full bg-white/10 animate-ping" style={{ animationDuration: "2s" }} />
-                </div>
-
                 {/* Content */}
                 <div className="relative z-10 p-6 lg:p-8 text-center md:text-left flex flex-col items-center md:items-start">
                   {/* Icon */}
-                  <div className="mb-6">
-                    <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center group-hover:bg-white/15 group-hover:border-white/20 group-hover:scale-110 transition-all duration-500">
+                  <div className="mb-6 relative">
+                    {/* Animated Glow Ring — positioned relative to icon */}
+                    <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 hidden md:block -inset-4">
+                      <div className="absolute inset-0 rounded-full bg-white/10 animate-ping" style={{ animationDuration: "2s" }} />
+                    </div>
+                    <div className="relative w-12 h-12 lg:w-14 lg:h-14 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center group-hover:bg-white/15 group-hover:border-white/20 group-hover:scale-110 transition-all duration-500">
                       {cloneElement(item.icon, {
                         className: "w-6 h-6 text-white/70 group-hover:text-white transition-colors duration-300",
                       })}

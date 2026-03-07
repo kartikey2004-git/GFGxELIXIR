@@ -70,7 +70,7 @@ const Partners = () => {
               <div className="w-full h-0.5 bg-blue-400/50 shadow-[0_0_15px_rgba(59,130,246,0.8)] animate-[scan_2s_linear_infinite]" />
             </div>
 
-            <Card className="relative h-full bg-white/[0.02] border border-white/10 rounded-none transition-all duration-500 group-hover:bg-blue-500/[0.05] group-hover:border-blue-500/50">
+            <Card className="relative w-[290px] sm:w-[390px] h-full bg-white/[0.02] border border-white/10 rounded-none transition-all duration-500 group-hover:bg-blue-500/[0.05] group-hover:border-blue-500/50">
               <CardContent className="p-8 flex flex-col items-center justify-between min-h-[300px]">
                 <span className="self-start font-mono text-[9px] text-white/30 group-hover:text-blue-400 transition-colors">
                   SEC_BETA_01

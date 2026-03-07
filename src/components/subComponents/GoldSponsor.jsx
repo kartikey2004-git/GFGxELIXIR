@@ -42,7 +42,7 @@ const GoldSponsors = () => {
             <div className="h-[1px] w-12 bg-blue-500/50" />
           </div>
           <h2 className="text-5xl md:text-7xl font-extralight tracking-tighter uppercase italic">
-            Platform{" "}
+            Our{" "}
             <span className="font-bold bg-gradient-to-r from-[#0080FF] via-[#0D52BD] to-[#1C05B3] bg-clip-text text-transparent">
               Sponsors
             </span>
@@ -58,8 +58,8 @@ const GoldSponsors = () => {
           </p>
         </div>
 
-        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 justify-center items-center"> */}
-        <div className="flex flex-col md:flex-row gap-20 justify-center items-center">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-35 justify-center items-center"> */}
+        <div className="flex flex-wrap flex-col md:flex-row justify-center items-center gap-14">
           {GoldSponsorsData.map((sponsor, i) => (
             <div
               key={i}
@@ -69,7 +69,7 @@ const GoldSponsors = () => {
               <div className="absolute -left-2 top-0 bottom-0 w-[1px] bg-gradient-to-b from-transparent via-white/40 to-transparent" />
               <div className="absolute -right-2 top-0 bottom-0 w-[1px] bg-gradient-to-b from-transparent via-white/40 to-transparent" />
 
-              <Card className="relative w-xs md:w-sm overflow-hidden border-none bg-gradient-to-b from-white/[0.08] to-transparent backdrop-blur-xl rounded-none transition-all duration-500 group-hover:from-white/[0.12]">
+              <Card className="relative w-[270px] sm:w-[360px] aspect-square overflow-hidden border-none bg-gradient-to-b from-white/[0.08] to-transparent backdrop-blur-xl rounded-none transition-all duration-500 group-hover:from-white/[0.12]">
                 <CardContent className="p-12 flex flex-col items-center justify-center min-h-[320px]">
                   <div
                     className={`absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t ${sponsor.glow} to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700`}

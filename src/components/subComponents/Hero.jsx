@@ -9,6 +9,7 @@ import { animatePinnedSection } from "@/lib/gsap-utils";
 import CountdownTimer from "./CountdownTimer";
 import Image from "next/image";
 import { useDevfolio } from "@/hooks/useDevfolio";
+import { Venue } from "./Venue";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -44,7 +45,7 @@ const Hero = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-[90vh] w-full overflow-hidden text-white"
+      className="relative min-h-screen w-full overflow-hidden text-white"
     >
       <div
         ref={contentRef}
@@ -118,6 +119,10 @@ const Hero = () => {
 
         <div className="w-full max-w-4xl mt-6">
           <CountdownTimer targetDate="2026-03-28T11:00:00" />
+        </div>
+
+        <div>
+          <Venue />
         </div>
       </div>
     </section>

@@ -171,43 +171,44 @@ const About = () => {
             isMobile
               ? undefined
               : {
-                scale: 1.05,
-                rotate: 2,
-                transition: { duration: 0.2 },
-                cursor: "url('/cursor.png') 12 12, grabbing",
-              }
+                  scale: 1.05,
+                  rotate: 2,
+                  transition: { duration: 0.2 },
+                  cursor: "url('/cursor.png') 12 12, grabbing",
+                }
           }
           whileTap={
             !isMobile
               ? {
-                scale: 0.95,
-                transition: { duration: 0.1 },
-              }
+                  scale: 0.95,
+                  transition: { duration: 0.1 },
+                }
               : undefined
           }
           onDragStart={
             isMobile
               ? undefined
               : () => {
-                document.body.style.cursor =
-                  "url('/cursor.png') 12 12, grabbing";
-              }
+                  document.body.style.cursor =
+                    "url('/cursor.png') 12 12, grabbing";
+                }
           }
           onDragEnd={
             isMobile
               ? undefined
               : () => {
-                document.body.style.cursor = "auto";
-              }
+                  document.body.style.cursor = "auto";
+                }
           }
         >
           <Image
             src="/astro.2.webp"
             alt="Astronaut"
-            className={`w-full object-contain pointer-events-none ${isMobile
-              ? "max-w-70 animate-astro-float-mobile"
-              : "max-w-162.5 drop-shadow-[0_0_15px_rgba(0,128,255,0.3)] animate-astro-float brightness-85"
-              }`}
+            className={`w-full object-contain pointer-events-none ${
+              isMobile
+                ? "max-w-70 animate-astro-float-mobile"
+                : "max-w-162.5 drop-shadow-[0_0_15px_rgba(0,128,255,0.3)] animate-astro-float brightness-85"
+            }`}
             height={500}
             width={500}
           />
@@ -218,8 +219,9 @@ const About = () => {
           <Card className="bg-white/1 backdrop-blur-xl border-white/10 text-white shadow-2xl">
             <CardHeader>
               <CardTitle
-                className={`${sectionHeadingFont.className} ${isMobile ? "text-3xl" : "text-4xl md:text-5xl"
-                  } mb-4 tracking-[0.08em] uppercase font-bold text-white`}
+                className={`${sectionHeadingFont.className} ${
+                  isMobile ? "text-3xl" : "text-4xl md:text-5xl"
+                } mb-4 tracking-[0.08em] uppercase font-bold text-white`}
               >
                 Mission{" "}
                 <span className="bg-linear-to-r from-[#0080FF] via-[#0D52BD] to-[#1C05B3] bg-clip-text text-transparent">
@@ -231,8 +233,9 @@ const About = () => {
 
             <CardContent className="space-y-6 text-gray-300">
               <p
-                className={`${aboutBodyFont.className} ${isMobile ? "text-sm" : "text-base md:text-lg"
-                  } leading-relaxed`}
+                className={`${aboutBodyFont.className} ${
+                  isMobile ? "text-sm" : "text-base md:text-lg"
+                } leading-relaxed`}
               >
                 <span className="font-semibold bg-linear-to-r from-[#0080FF] via-[#0D52BD] to-[#1C05B3] bg-clip-text text-transparent">
                   CLASSIFIED: Stellar Corps
@@ -257,13 +260,16 @@ const About = () => {
                 against the gravity of code and creative void. Developers unite,
                 adapt, and rise beyond all horizons.
               </p>
-              <p className="font-semibold bg-linear-to-r from-white via-white to-white bg-clip-text text-transparent">
-  Venue - Abes Engineering College, Ghaziabad
-</p>
+              
+              {/* Venue */}
+              <p className="font-bold bg-linear-to-r from-white via-white to-white bg-clip-text text-transparent">
+                <span className="font-bold bg-linear-to-r from-[#0080FF] via-[#0D52BD] to-[#1C05B3] bg-clip-text text-transparent">Venue</span> - Abes Engineering College, Ghaziabad
+              </p>
 
               <div
-                className={`grid ${isMobile ? "grid-cols-1" : "grid-cols-2"
-                  } gap-3 text-left`}
+                className={`grid ${
+                  isMobile ? "grid-cols-1" : "grid-cols-2"
+                } gap-3 text-left`}
               >
                 {aboutData.map((item, idx) => (
                   <div
@@ -273,14 +279,16 @@ const About = () => {
                     <div className="shrink-0">{item.icon}</div>
                     <div className="min-w-0">
                       <h3
-                        className={`font-semibold text-white ${isMobile ? "text-sm" : "text-md md:text-base"
-                          } truncate`}
+                        className={`font-semibold text-white ${
+                          isMobile ? "text-sm" : "text-md md:text-base"
+                        } truncate`}
                       >
                         {item.title}
                       </h3>
                       <p
-                        className={`${aboutBodyFont.className} text-gray-400 ${isMobile ? "text-xs" : "text-xs md:text-sm"
-                          } line-clamp-2`}
+                        className={`${aboutBodyFont.className} text-gray-400 ${
+                          isMobile ? "text-xs" : "text-xs md:text-sm"
+                        } line-clamp-2`}
                       >
                         {item.text}
                       </p>

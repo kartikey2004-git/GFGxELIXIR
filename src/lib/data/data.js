@@ -166,19 +166,15 @@ export const timelineData = [
 ];
 
 export const GoldSponsorsData = [
-  // { tier: "India Blockchain Week 2024", alt: "India Blockchain Week 2024", image: "/sponsors/ibw.svg", glow: "from-blue-500/20" },
-  { tier: "Cyrene AI", alt: "Cyrene AI Logo", image: "/sponsors/cyrene-2.png", glow: "from-purple-500/20" },
   { tier: "GitHub", alt: "GitHub Logo", image: "/sponsors/github-logo.png", glow: "from-indigo-500/20" },
+  { tier: "Risein", alt: "Risein", image: "/sponsors/On_Black_Vertical.png", glow: "from-blue-500/20" },
   // { tier: "Polygon", alt: "Polygon", image: "/sponsors/Polygon.svg", glow: "from-pink-500/20" },
 ];
 export const SilverSponsorsData = [
   // { tier: "India Blockchain Week 2024", alt: "India Blockchain Week 2024", image: "/sponsors/ibw.svg", glow: "from-blue-500/20" },
+  { tier: "Cyrene AI", alt: "Cyrene AI Logo", image: "/sponsors/cyrene-2.png", glow: "from-purple-500/20" },
   { tier: "Featherless.ai", alt: "Featherless.ai Logo", image: "/sponsors/featherlessai.png", glow: "from-slate-500/10" },
   { tier: "CertifyOS", alt: "CertifyOS Logo", image: "/sponsors/FREE CREDITS (3).png", glow: "from-cyan-500/20" },
-
-  // { tier: "QuillAudits", alt: "QuillAudits", image: "/sponsors/QuillAudit.webp", glow: "from-purple-500/20" },
-  // { tier: "ETHIndia", alt: "ETHIndia", image: "/sponsors/ethindia-logo.svg", glow: "from-pink-500/20" },
-  // { tier: "Polygon", alt: "Polygon", image: "/sponsors/Polygon.svg", glow: "from-indigo-500/20" },
 ];
 export const BronzeSponsorsData = [
   // { tier: "India Blockchain Week 2024", alt: "India Blockchain Week 2024", image: "/sponsors/ibw.svg", glow: "from-blue-500/20" },

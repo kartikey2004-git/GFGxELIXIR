@@ -36,7 +36,7 @@ const BronzeSponsors = () => {
         </div>
 
         {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> */}
-        <div className="flex flex-col md:flex-row justify-center items-center gap-20">
+        <div className="flex flex-wrap flex-col md:flex-row justify-center items-center gap-10">
           {BronzeSponsorsData.map((sponsor, i) => (
             <div
               key={i}
@@ -47,7 +47,7 @@ const BronzeSponsors = () => {
               <div className="absolute -bottom-2 -right-2 w-4 h-4 border-b-2 border-r-2 border-blue-500 opacity-0 group-hover:opacity-100 transition-all duration-500" />
 
               <div
-                className="relative bg-white/3 w-xs md:w-sm border border-white/10 p-10 backdrop-blur-md transition-all duration-500 group-hover:bg-white/[0.07] group-hover:border-blue-500/50"
+                className="relative bg-white/3 w-[280px] sm:w-[360px] border border-white/10 p-10 backdrop-blur-md transition-all duration-500 group-hover:bg-white/[0.07] group-hover:border-blue-500/50"
                 style={{
                   clipPath: "polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%)"
                 }}

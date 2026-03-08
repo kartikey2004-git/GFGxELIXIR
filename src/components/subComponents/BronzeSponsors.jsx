@@ -58,12 +58,14 @@ const BronzeSponsors = () => {
                   <div className="relative w-32 h-32 flex items-center justify-center mb-8">
                     <div className="absolute inset-0 bg-blue-500/10 rotate-45 border border-blue-500/20 group-hover:rotate-90 transition-transform duration-700" />
                     <div className="relative w-20 h-20">
-                      <Image
-                        fill
-                        src={sponsor.image}
-                        alt={sponsor.tier}
-                        className="object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500"
-                      />
+                      <a href={sponsor.link || "#"} target="_blank" rel="noopener noreferrer" className="block w-full h-full relative z-20">
+                        <Image
+                          fill
+                          src={sponsor.image}
+                          alt={sponsor.tier}
+                          className="object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500"
+                        />
+                      </a>
                     </div>
                   </div>
 

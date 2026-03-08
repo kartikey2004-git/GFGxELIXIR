@@ -166,22 +166,22 @@ export const timelineData = [
 ];
 
 export const GoldSponsorsData = [
-  { tier: "GitHub", alt: "GitHub Logo", image: "/sponsors/github-logo.png", glow: "from-indigo-500/20" },
-  { tier: "Risein", alt: "Risein", image: "/sponsors/On_Black_Vertical.png", glow: "from-blue-500/20" },
-  // { tier: "Polygon", alt: "Polygon", image: "/sponsors/Polygon.svg", glow: "from-pink-500/20" },
+  { tier: "GitHub", alt: "GitHub Logo", image: "/sponsors/github-logo.png", glow: "from-indigo-500/20", link: "https://github.com/" },
+  { tier: "Risein", alt: "Risein", image: "/sponsors/On_Black_Vertical.png", glow: "from-blue-500/20", link: "https://www.risein.com/" },
+  // { tier: "Polygon", alt: "Polygon", image: "/sponsors/Polygon.svg", glow: "from-pink-500/20", link: "#" },
 ];
 export const SilverSponsorsData = [
-  // { tier: "India Blockchain Week 2024", alt: "India Blockchain Week 2024", image: "/sponsors/ibw.svg", glow: "from-blue-500/20" },
-  { tier: "Cyrene AI", alt: "Cyrene AI Logo", image: "/sponsors/cyrene-2.png", glow: "from-purple-500/20" },
-  { tier: "Featherless.ai", alt: "Featherless.ai Logo", image: "/sponsors/featherlessai.png", glow: "from-slate-500/10" },
-  { tier: "CertifyOS", alt: "CertifyOS Logo", image: "/sponsors/FREE CREDITS (3).png", glow: "from-cyan-500/20" },
+  // { tier: "India Blockchain Week 2024", alt: "India Blockchain Week 2024", image: "/sponsors/ibw.svg", glow: "from-blue-500/20", link: "#" },
+  { tier: "Cyrene AI", alt: "Cyrene AI Logo", image: "/sponsors/cyrene-2.png", glow: "from-purple-500/20", link: "https://cyreneai.com/" },
+  { tier: "Featherless.ai", alt: "Featherless.ai Logo", image: "/sponsors/featherlessai.png", glow: "from-slate-500/10", link: "https://featherless.ai/" },
+  { tier: "CertifyOS", alt: "CertifyOS Logo", image: "/sponsors/FREE CREDITS (3).png", glow: "from-cyan-500/20", link: "https://www.certifyos.com/" },
 ];
 export const BronzeSponsorsData = [
-  // { tier: "India Blockchain Week 2024", alt: "India Blockchain Week 2024", image: "/sponsors/ibw.svg", glow: "from-blue-500/20" },
-  { tier: "Gen", alt: "Gen Logo", image: "/sponsors/xyz-logo-white.png", glow: "from-cyan-500/20" },
-  { tier: "Windsurf", alt: "Windsurf Logo", image: "/sponsors/Windsurf-white-symbol.png", glow: "from-purple-500/20" },
-  { tier: "E-certify", alt: "E-certify Logo", image: "/sponsors/ecertifyhub2.png", glow: "from-pink-500/20" },
-  // { tier: "Polygon", alt: "Polygon", image: "/sponsors/Polygon.svg", glow: "from-indigo-500/20" },
+  // { tier: "India Blockchain Week 2024", alt: "India Blockchain Week 2024", image: "/sponsors/ibw.svg", glow: "from-blue-500/20", link: "#" },
+  { tier: "Gen", alt: "Gen Logo", image: "/sponsors/xyz-logo-white.png", glow: "from-cyan-500/20", link: "https://gen.xyz/" },
+  { tier: "Windsurf", alt: "Windsurf Logo", image: "/sponsors/Windsurf-white-symbol.png", glow: "from-purple-500/20", link: "https://windsurf.com/" },
+  { tier: "E-certify", alt: "E-certify Logo", image: "/sponsors/ecertifyhub2.png", glow: "from-pink-500/20", link: "https://ecertifyhub.in/" },
+  // { tier: "Polygon", alt: "Polygon", image: "/sponsors/Polygon.svg", glow: "from-indigo-500/20", link: "#" },
 ];
 
 

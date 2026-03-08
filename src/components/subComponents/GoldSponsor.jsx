@@ -75,7 +75,7 @@ const GoldSponsors = () => {
                     className={`absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t ${sponsor.glow} to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700`}
                   />
 
-                  <div className="absolute z-10 w-50 h-27 mb-10 transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-2">
+                  <a href={sponsor.link || "#"} target="_blank" rel="noopener noreferrer" className="absolute z-10 w-50 h-27 mb-10 transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-2 block">
                     {sponsor.image ? (
                       <Image
                         fill
@@ -88,7 +88,7 @@ const GoldSponsors = () => {
                         {sponsor.alt}
                       </div>
                     )}
-                  </div>
+                  </a>
 
                   <div className="w-full text-center">
                     <div className="h-px w-12 bg-blue-500 mx-auto mb-4 scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />

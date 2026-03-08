@@ -184,12 +184,14 @@ const SilverSponsors = () => {
 
                 <div className="relative z-20 flex flex-col items-center space-y-8">
                   <div className="relative w-36 h-36 md:w-44 md:h-44 filter drop-shadow-[0_0_8px_rgba(255,255,255,0.05)]">
-                    <Image
-                      fill
-                      src={sponsor.image}
-                      alt={sponsor.alt}
-                      className="object-contain"
-                    />
+                    <a href={sponsor.link || "#"} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                      <Image
+                        fill
+                        src={sponsor.image}
+                        alt={sponsor.alt}
+                        className="object-contain"
+                      />
+                    </a>
                   </div>
 
                   <div className="text-center">

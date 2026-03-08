@@ -28,7 +28,7 @@ export function Venue() {
       onMouseEnter={() => setHov(true)}
       onMouseLeave={() => setHov(false)}
       className="relative px-10 py-10 cursor-pointer bg-[#050505] rounded-lg border border-[rgba(0,200,180,0.05)] overflow-hidden  sm:w-150 md:w-180 transition-shadow duration-400">
-
+        
       {/* Grid background */}
       <div
         className={`absolute inset-0 pointer-events-none z-0 

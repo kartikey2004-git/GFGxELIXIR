@@ -85,8 +85,6 @@ const Prizes = () => {
     }
   }, []);
 
-
-
   return (
     <section className="relative min-h-screen py-24 text-white overflow-hidden flex flex-col justify-center perspective-1000">
       <div className="relative z-10 container mx-auto px-4">
@@ -137,18 +135,21 @@ const Prizes = () => {
                   {p.place}
                 </h3>
 
-                <div className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight group-hover:scale-110 transition-transform duration-300">
+                <div className="text-4xl text-left md:text-5xl font-bold text-white mb-6 tracking-tight group-hover:scale-110 transition-transform duration-300">
                   {p.amount}
                 </div>
 
-                <div className="w-full space-y-3 px-6 mb-auto">
+                <div className="w-75 grid gap-3 px-6 mb-auto">
                   {p.perks.map((perk, j) => (
                     <div
                       key={j}
-                      className="flex items-center justify-center gap-2 text-xs md:text-sm text-gray-400 border border-white/5 py-2 rounded-full group-hover:bg-white/5 transition-colors duration-300"
+                      className="flex items-center justify-center gap-2 px-4 text-xs md:text-sm text-gray-400 border border-white/5 py-2 rounded-full group-hover:bg-white/5 transition-colors duration-300"
                     >
-                      <Star size={10} className="fill-current opacity-50" />
-                      {perk}
+                      <Star
+                        size={10}
+                        className="fill-current opacity-50 shrink-0"
+                      />
+                      <span>{perk}</span>
                     </div>
                   ))}
                 </div>
@@ -157,11 +158,10 @@ const Prizes = () => {
           ))}
         </div>
 
-
         {/* TRACK WINNERS */}
         {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto"> */}
-          {/* --- Card 1: Track Winners --- */}
-          {/* <motion.div
+        {/* --- Card 1: Track Winners --- */}
+        {/* <motion.div
             className="h-full perspective-1000"
             whileHover={{ scale: 1.02 }}
           >
@@ -204,8 +204,8 @@ const Prizes = () => {
             </InteractiveCard>
           </motion.div> */}
 
-          {/* --- Card 2: Special Awards --- */}
-          {/* <motion.div
+        {/* --- Card 2: Special Awards --- */}
+        {/* <motion.div
             className="h-full perspective-1000"
             whileHover={{ scale: 1.02 }}
           >

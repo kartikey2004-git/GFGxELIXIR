@@ -178,7 +178,7 @@ export const SilverSponsorsData = [
 ];
 export const BronzeSponsorsData = [
   // { tier: "India Blockchain Week 2024", alt: "India Blockchain Week 2024", image: "/sponsors/ibw.svg", glow: "from-blue-500/20", link: "#" },
-  { tier: "Gen", alt: "Gen Logo", image: "/sponsors/xyz-logo-white.png", glow: "from-cyan-500/20", link: "https://gen.xyz/" },
+  { tier: "Gen.xyz", alt: "Gen Logo", image: "/sponsors/xyz-logo-white.png", glow: "from-cyan-500/20", link: "https://gen.xyz/" },
   { tier: "Windsurf", alt: "Windsurf Logo", image: "/sponsors/Windsurf-white-symbol.png", glow: "from-purple-500/20", link: "https://windsurf.com/" },
   { tier: "E-certify", alt: "E-certify Logo", image: "/sponsors/ecertifyhub2.png", glow: "from-pink-500/20", link: "https://ecertifyhub.in/" },
   // { tier: "Polygon", alt: "Polygon", image: "/sponsors/Polygon.svg", glow: "from-indigo-500/20", link: "#" },

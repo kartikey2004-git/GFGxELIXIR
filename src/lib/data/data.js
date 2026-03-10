@@ -173,7 +173,7 @@ export const GoldSponsorsData = [
 export const SilverSponsorsData = [
   // { tier: "India Blockchain Week 2024", alt: "India Blockchain Week 2024", image: "/sponsors/ibw.svg", glow: "from-blue-500/20", link: "#" },
   { tier: "Cyrene AI", alt: "Cyrene AI Logo", image: "/sponsors/cyrene-2.png", glow: "from-purple-500/20", link: "https://cyreneai.com/" },
-  { tier: "Featherless.ai", alt: "Featherless.ai Logo", image: "/sponsors/featherlessai.png", glow: "from-slate-500/10", link: "https://featherless.ai/" },
+
   { tier: "CertifyX", alt: "CertifyX Logo", image: "/sponsors/FREE CREDITS (3).png", glow: "from-cyan-500/20", link: "https://certifyix.com/" },
 ];
 export const BronzeSponsorsData = [
@@ -181,6 +181,9 @@ export const BronzeSponsorsData = [
   { tier: "Gen.xyz", alt: "Gen Logo", image: "/sponsors/xyz-logo-white.png", glow: "from-cyan-500/20", link: "https://gen.xyz/" },
   { tier: "Windsurf", alt: "Windsurf Logo", image: "/sponsors/Windsurf-white-symbol.png", glow: "from-purple-500/20", link: "https://windsurf.com/" },
   { tier: "E-certify", alt: "E-certify Logo", image: "/sponsors/ecertifyhub2.png", glow: "from-pink-500/20", link: "https://ecertifyhub.in/" },
+  { tier: "Featherless.ai", alt: "Featherless.ai Logo", image: "/sponsors/featherlessai.png", glow: "from-slate-500/10", link: "https://featherless.ai/" },
+  { tier: "Stellar", alt: "Stellar Logo", image: "/sponsors/stellar.png", glow: "from-slate-500/10", link: "https://stellar.org/" },
+  { tier: "Apacked", alt: "Apacked Logo", image: "/sponsors/apacked.png", glow: "from-slate-500/10", link: "https://apacked.com/" },
   // { tier: "Polygon", alt: "Polygon", image: "/sponsors/Polygon.svg", glow: "from-indigo-500/20", link: "#" },
 ];
 

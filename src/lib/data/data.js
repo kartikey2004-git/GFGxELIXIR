@@ -106,7 +106,7 @@ export const timelineData = [
           Registration Opens
         </h4>
         <p className="text-base md:text-lg text-white/80 leading-relaxed">
-          Sign up starts now! Get ready for an amazing hackathon experience. Secure your spot and join us for 24 hours of innovation.
+          Sign up starts now! Get ready for an amazing hackathon experience. Secure your spot and join us for 12 hours of innovation.
         </p>
       </div>
     ),
@@ -132,7 +132,7 @@ export const timelineData = [
           Hackathon Begins
         </h4>
         <p className="text-base md:text-lg text-white/80 leading-relaxed">
-          Coding, innovation, and collaboration starts now! Teams begin their 36-hour journey to create amazing projects.
+          Coding, innovation, and collaboration starts now! Teams begin their 12-hour journey to create amazing projects.
         </p>
       </div>
     ),

@@ -247,7 +247,7 @@ const About = () => {
                   GeeksforGeeks X Elixir Space Station
                 </span>{" "}
                 commences it&apos;s mission to find mankind&apos;s new frontier-
-                a 24 hours voyage to push past limits of innovation.
+                a 12 hours voyage to push past limits of innovation.
               </p>
 
               <p

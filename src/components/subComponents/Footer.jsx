@@ -43,7 +43,7 @@ export default function Footer() {
                 March 28 - 29, 2026
               </p>
               <p className="text-gray-400 text-base md:text-lg font-semibold">
-                24 Hours of Innovation
+                12 Hours of Innovation
               </p>
               <p className="text-gray-400 text-base md:text-lg font-semibold">
                 Venue: ABES Engineering College, Ghaziabad

@@ -175,3 +175,80 @@
   visibility: visible !important;
   opacity: 1 !important;
 }
+
+/* =============================================
+   Community Partners — Infinite Carousel
+   ============================================= */
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: scroll-left 70s linear infinite;
+}
+
+.carousel-container:hover .carousel-track {
+  animation-play-state: paused;
+}
+
+.carousel-card {
+  position: relative;
+  flex-shrink: 0;
+  width: 320px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.carousel-card:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.carousel-card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+/* Responsive — Mobile */
+@media (max-width: 640px) {
+  .carousel-card {
+    width: 240px;
+    height: 240px;
+  }
+
+  .carousel-track {
+    gap: 1.25rem;
+    animation-duration: 45s;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .carousel-track {
+    animation-play-state: paused;
+  }
+}

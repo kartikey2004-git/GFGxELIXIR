@@ -13,6 +13,7 @@ import GoldSponsors from "@/components/subComponents/GoldSponsor";
 import SilverSponsors from "@/components/subComponents/SilverSponsers";
 import BronzeSponsors from "@/components/subComponents/BronzeSponsors";
 import Partners from "@/components/subComponents/Partners";
+import CommunityPartners from "@/components/subComponents/CommunityPartners";
 
 export default function Home() {
   return (
@@ -49,6 +50,10 @@ export default function Home() {
 
       <section id="sponsors" className="relative z-10 scroll-mt-20">
         <Partners />
+      </section>
+
+      <section id="community-partners" className="relative z-10 scroll-mt-20">
+        <CommunityPartners />
       </section>
 
       <section id="prizes" className="relative z-10 scroll-mt-20">

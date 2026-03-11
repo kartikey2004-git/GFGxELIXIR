@@ -206,6 +206,14 @@ export const quickLinks = [
   { label: "Rewards", href: "#prizes" },
 ];
 
+export const communityPartnersData = [
+  { name: "Code Crafting", alt: "Code Crafting Logo", image: "/community-partners/code-crafting.png",  },
+  { name: "Blitz", alt: "Blitz Logo", image: "/community-partners/blitz.png" },
+  { name: "GeeksForGeeks BU", alt: "GeeksForGeeks BU Logo", image: "/community-partners/gfg-bu.png" },
+  { name: "Spark Tech", alt: "Spark Tech AI Hub Logo", image: "/community-partners/spark-tech.png" },
+  { name: "AWS Cloud Clubs GBU", alt: "AWS Cloud Clubs GBU Logo", image: "/community-partners/aws-cloud-clubs.png" },
+  { name: "Campus Lens", alt: "Campus Lens Logo", image: "/community-partners/campus-lens.png" },
+];
 
 export const winners = [
   {

@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Stellaris 2026",
   description:
-    "Join 1000+ developers, designers, and innovators for an epic 48-hour hackathon. Build cutting-edge projects and compete for amazing prizes.",
+    "Join 1000+ developers, designers, and innovators for an epic 12-hour hackathon. Build cutting-edge projects and compete for amazing prizes.",
   icons: {
     icon: '/icon.webp',
   },

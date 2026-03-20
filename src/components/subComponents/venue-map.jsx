@@ -24,18 +24,6 @@ const MapAutoScroller = () => {
         duration: 2000,
         essential: true,
       });
-      hasAutoScrolled.current = true;
-
-      // Also scroll the page to the map element
-      setTimeout(() => {
-        const mapElement = document.getElementById("venue-map");
-        if (mapElement) {
-          mapElement.scrollIntoView({
-            behavior: "smooth",
-            block: "center",
-          });
-        }
-      }, 500);
     }
   }, [isLoaded, map]);
 

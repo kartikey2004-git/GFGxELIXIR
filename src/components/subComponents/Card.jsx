@@ -109,7 +109,7 @@ const Cards = () => {
           <h2 className="text-5xl md:text-7xl lg:text-8xl font-thin tracking-tight mb-6">
             Cosmic{" "}
             <span className="font-semibold italic bg-gradient-to-r from-[#0080FF] via-[#0D52BD] to-[#1C05B3] bg-clip-text text-transparent">
-              Horizons
+              Tracks
             </span>
           </h2>
 

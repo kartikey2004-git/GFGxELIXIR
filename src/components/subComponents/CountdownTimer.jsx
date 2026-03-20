@@ -30,7 +30,7 @@ const Unit = ({ value, label }) => (
 
 const CountdownTimer = () => {
   
-  const targetDate = new Date("2026-03-22T00:00:00+05:30").getTime();
+  const targetDate = new Date("2026-03-28T00:00:00+05:30").getTime();
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,

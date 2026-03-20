@@ -1,7 +1,14 @@
 // kal CN ka exam hai, mai yha hackathon ki website fix kar rha hu :)
 
 import { Card } from "../ui/card";
-import { Map, MapControls, MapMarker, MarkerContent, useMap } from "../ui/map";
+import {
+  Map,
+  MapControls,
+  MapMarker,
+  MarkerContent,
+  MarkerTooltip,
+  useMap,
+} from "../ui/map";
 import { useEffect, useRef } from "react";
 
 const MapAutoScroller = () => {
@@ -45,7 +52,7 @@ export const VenueMap = () => {
   };
 
   return (
-    <Card className="h-[320px] p-0 overflow-hidden" id="venue-map">
+    <Card className="h-[320px] p-0" id="venue-map">
       <Map center={[28.634289092427416, 77.44597903398297]} zoom={14}>
         <MapAutoScroller />
         <MapMarker
@@ -54,6 +61,7 @@ export const VenueMap = () => {
           onClick={handleMarkerClick}
         >
           <MarkerContent className="cursor-pointer" />
+          <MarkerTooltip>Click to open in Google Maps</MarkerTooltip>
         </MapMarker>
         <MapControls />
       </Map>

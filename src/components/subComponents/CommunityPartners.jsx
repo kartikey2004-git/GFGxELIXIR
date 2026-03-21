@@ -11,34 +11,26 @@ const CommunityPartners = () => {
   const sectionRef = useRef(null);
 
 useEffect(() => {
-  if (!sectionRef.current) return;
-
-  const ctx = gsap.context(() => {
-    gsap.fromTo(
-      sectionRef.current,
-      {
-        opacity: 0,
-        y: 10,           
-        scale: 0.98,    
-      },
-      {
-        opacity: 1,
-        y: 0,
-        scale: 1,
-        ease: "none",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top top",
-          end: "+=8000",   
-          scrub: 20,      
-          pin: true,       
-        },
-      }
-    );
-  }, sectionRef);
-
-  return () => ctx.revert();
-}, []);
+    if (!sectionRef.current) return;
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        sectionRef.current,
+        { opacity: 0, y: 30 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 5,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top 85%",
+            toggleActions: "play none none none",
+          },
+        }
+      );
+    }, sectionRef);
+    return () => ctx.revert();
+  }, []);
 
   return (
     <section

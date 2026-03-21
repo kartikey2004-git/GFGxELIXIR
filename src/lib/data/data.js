@@ -178,9 +178,10 @@ export const BronzeSponsorsData = [
   { tier: "Gen.xyz", alt: "Gen Logo", image: "/sponsors/xyz-logo-white.png", glow: "from-cyan-500/20", link: "https://gen.xyz/" },
   { tier: "Windsurf", alt: "Windsurf Logo", image: "/sponsors/Windsurf-white-symbol.png", glow: "from-purple-500/20", link: "https://windsurf.com/" },
   { tier: "E-certify", alt: "E-certify Logo", image: "/sponsors/ecertifyhub2.png", glow: "from-pink-500/20", link: "https://ecertifyhub.in/" },
-  { tier: "Featherless.ai", alt: "Featherless.ai Logo", image: "/sponsors/featherlessai.png", glow: "from-slate-500/10", link: "https://featherless.ai/" },
+  { tier: "Featherless.ai", alt: "Featherless.ai Logo", image: "/sponsors/featherlessai.png", glow: "from-blue-500/10", link: "https://featherless.ai/" },
   { tier: "Stellar", alt: "Stellar Logo", image: "/sponsors/stellar.png", glow: "from-slate-500/10", link: "https://stellar.org/" },
-  { tier: "Apacked", alt: "Apacked Logo", image: "/sponsors/apacked.png", glow: "from-slate-500/10", link: "https://apacked.com/" },
+  { tier: "Apacked", alt: "Apacked Logo", image: "/sponsors/apacked.png", glow: "from-yellow-500/10", link: "https://apacked.com/" },
+  { tier: "Replit", alt: "Replit Logo", image: "/sponsors/replit-white.png", glow: "from-green-500/20", link: "https://replit.com/" },
 ];
 
 
@@ -209,6 +210,14 @@ export const communityPartnersData = [
   { name: "Spark Tech", alt: "Spark Tech AI Hub Logo", image: "/community-partners/spark-tech.png" },
   { name: "AWS Cloud Clubs GBU", alt: "AWS Cloud Clubs GBU Logo", image: "/community-partners/aws-cloud-clubs.png" },
   { name: "Campus Lens", alt: "Campus Lens Logo", image: "/community-partners/campus-lens.png" },
+  { name: "Event Dev X", alt: "Event Dev X Logo", image: "/community-partners/event-dev-x.jpeg" },
+  { name: "GDG on Campus GCET", alt: "GDG on Campus GCET Logo", image: "/community-partners/gdg-gcet.jpeg" },
+  { name: "Geek Room KIET", alt: "Geek Room KIET Logo", image: "/community-partners/geek-kiet.jpeg" },
+  { name: "GFG <DTC Campus Body/>", alt: "GFG <DTC Campus Body/> Logo", image: "/community-partners/gfg-dtc.jpeg" },
+  { name: "GFG CAMPUS BODY GLBITM", alt: "GFG CAMPUS BODY GLBITM Logo", image: "/community-partners/gfg-glbitm.jpeg" },
+  { name: "Hacknfinity", alt: "Hacknfinity Logo", image: "/community-partners/hacknfinity.jpeg" },
+  { name: "Rubix", alt: "Rubix Logo", image: "/community-partners/rubix.jpeg" },
+  { name: "Fresources", alt: "Fresources Logo", image: "/community-partners/Fresources.jpeg" },
 ];
 
 export const winners = [

@@ -112,7 +112,7 @@ export const timelineData = [
     ),
   },
   {
-    title: "22 March",
+    title: "25 March",
     content: (
       <div className="space-y-3">
         <h4 className="text-xl md:text-2xl font-bold text-white">
@@ -124,6 +124,19 @@ export const timelineData = [
       </div>
     ),
   },
+  // {
+  //   title: "25 March",
+  //   content: (
+  //     <div className="space-y-3">
+  //       <h4 className="text-xl md:text-2xl font-bold text-white">
+  //         Extended Registration Closed
+  //       </h4>
+  //       <p className="text-base md:text-lg text-white/80 leading-relaxed">
+  //         Extended registration is now closed. Stay tuned for updates and announcements as we prepare for the main event!
+  //       </p>
+  //     </div>
+  //   ),
+  // },
   {
     title: "28 March",
     content: (
@@ -204,26 +217,26 @@ export const quickLinks = [
 ];
 
 export const communityPartnersData = [
-  { name: "Code Crafting", alt: "Code Crafting Logo", image: "/community-partners/code-crafting.png",  },
-  { name: "Blitz", alt: "Blitz Logo", image: "/community-partners/blitz.png" },
-  { name: "GeeksForGeeks BU", alt: "GeeksForGeeks BU Logo", image: "/community-partners/gfg-bu.png" },
-  { name: "Spark Tech", alt: "Spark Tech AI Hub Logo", image: "/community-partners/spark-tech.png" },
-  { name: "AWS Cloud Clubs GBU", alt: "AWS Cloud Clubs GBU Logo", image: "/community-partners/aws-cloud-clubs.png" },
-  { name: "Campus Lens", alt: "Campus Lens Logo", image: "/community-partners/campus-lens.png" },
-  { name: "Event Dev X", alt: "Event Dev X Logo", image: "/community-partners/event-dev-x.jpeg" },
-  { name: "GDG on Campus GCET", alt: "GDG on Campus GCET Logo", image: "/community-partners/gdg-gcet.jpeg" },
-  { name: "Geek Room KIET", alt: "Geek Room KIET Logo", image: "/community-partners/geek-kiet.jpeg" },
-  { name: "GFG <DTC Campus Body/>", alt: "GFG <DTC Campus Body/> Logo", image: "/community-partners/gfg-dtc.jpeg" },
-  { name: "GFG CAMPUS BODY GLBITM", alt: "GFG CAMPUS BODY GLBITM Logo", image: "/community-partners/gfg-glbitm.jpeg" },
-  { name: "Hacknfinity", alt: "Hacknfinity Logo", image: "/community-partners/hacknfinity.jpeg" },
+  { name: "Code Crafting", alt: "Code Crafting Logo", image: "/community-partners/code-crafting.png", link: "https://www.instagram.com/cod.ecrafting"  },
+  { name: "Blitz", alt: "Blitz Logo", image: "/community-partners/blitz.png", link: "https://www.instagram.com/blitzkmv" },
+  { name: "GeeksForGeeks BU", alt: "GeeksForGeeks BU Logo", image: "/community-partners/gfg-bu.png", link: "https://www.instagram.com/geeksforgeeks_bu" },
+  { name: "Spark Tech", alt: "Spark Tech AI Hub Logo", image: "/community-partners/spark-tech.png", link: "https://www.instagram.com/sparktechaihub" },
+  { name: "Campus Lens", alt: "Campus Lens Logo", image: "/community-partners/campus-lens.png", link: "https://www.instagram.com/campuslens.iilm" },
+  { name: "Event Dev X", alt: "Event Dev X Logo", image: "/community-partners/event-dev-x.jpeg", link: "https://www.instagram.com/eventdevx" },
+  { name: "GDG on Campus GCET", alt: "GDG on Campus GCET Logo", image: "/community-partners/gdg-gcet.jpeg", link: "https://www.instagram.com/gdggcet" },
+  { name: "Geek Room KIET", alt: "Geek Room KIET Logo", image: "/community-partners/geek-kiet.jpeg", link: "https://www.instagram.com/geekroom_kiet" },
+  { name: "GFG <DTC Campus Body/>", alt: "GFG <DTC Campus Body/> Logo", image: "/community-partners/gfg-dtc.jpeg", link: "https://www.instagram.com/geeksforgeeks.dtc" },
+  { name: "GFG CAMPUS BODY GLBITM", alt: "GFG CAMPUS BODY GLBITM Logo", image: "/community-partners/gfg-glbitm.jpeg", link: "https://www.instagram.com/geeksforgeeks_glbajajitm" },
+  { name: "Hacknfinity", alt: "Hacknfinity Logo", image: "/community-partners/hacknfinity.jpeg", link: "https://www.instagram.com/hacknfinity" },
+  { name: "Fresources", alt: "Fresources Logo", image: "/community-partners/Fresources.jpeg", link: "https://www.instagram.com/fresources.tech" },
   { name: "Rubix", alt: "Rubix Logo", image: "/community-partners/rubix.jpeg" },
-  { name: "Fresources", alt: "Fresources Logo", image: "/community-partners/Fresources.jpeg" },
+  { name: "AWS Cloud Clubs GBU", alt: "AWS Cloud Clubs GBU Logo", image: "/community-partners/aws-cloud-clubs.png" },
 ];
 
 export const winners = [
   {
     place: "1st Place",
-    amount: "$500",
+    amount: "$300",
     icon: Trophy,
     color: "text-yellow-100",
     spotlight: "rgba(253, 224, 71, 0.2)",
@@ -234,7 +247,7 @@ export const winners = [
   },
   {
     place: "2nd Place",
-    amount: "$300",
+    amount: "$150",
     icon: Crown,
     color: "text-slate-200",
     spotlight: "rgba(226, 232, 240, 0.2)",
@@ -245,7 +258,7 @@ export const winners = [
   },
   {
     place: "3rd Place",
-    amount: "$200",
+    amount: "$100",
     icon: Award,
     color: "text-orange-100",
     spotlight: "rgba(253, 186, 116, 0.2)",

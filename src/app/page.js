@@ -14,6 +14,7 @@ import SilverSponsors from "@/components/subComponents/SilverSponsers";
 import BronzeSponsors from "@/components/subComponents/BronzeSponsors";
 import Partners from "@/components/subComponents/Partners";
 import CommunityPartners from "@/components/subComponents/CommunityPartners";
+import PoweredBy from "@/components/subComponents/PoweredBy";
 
 export default function Home() {
   return (
@@ -34,6 +35,10 @@ export default function Home() {
 
       <section id="timeline" className="relative z-10 scroll-mt-20">
         <MissionTimeline />
+      </section>
+
+      <section id="sponsors" className="relative z-10 scroll-mt-20">
+        <PoweredBy />
       </section>
 
       <section id="sponsors" className="relative z-10 scroll-mt-20">

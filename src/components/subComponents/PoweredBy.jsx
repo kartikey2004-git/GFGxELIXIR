@@ -60,12 +60,14 @@ const PoweredBy = () => {
             <CardContent className="p-16 flex flex-col items-center justify-center">
               
               <div className="relative w-56 h-32 mb-8 transition-transform duration-700 group-hover:scale-110">
+                <a href="https://mlh.io/" target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/mlh.webp"
                   alt="MLH Logo"
                   fill
                   className="object-contain"
-                />
+                  />
+                  </a>
               </div>
 
               <div className="w-full text-center relative z-10">
